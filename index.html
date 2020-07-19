@@ -8,7 +8,7 @@
 <body class="page">
   <header class="header">
     <a class="header__link logo">
-      <img src="https://via.placeholder.com/33x33" alt="Логотип магазина Cat Energy" class="header__logo logo__img">
+      <img src="https://via.placeholder.com/33x33" alt="Логотип магазина Cat Energy" class="logo__img">
     </a>
     <span class="header__store-name store-name"><b>Cat<b> Energy</span>
     <nav class="header__nav nav">
@@ -37,7 +37,7 @@
       </div>
     </section>
     <section class="main-catalog">
-      <article class="main-catalot__item">
+      <article class="main-catalog__item">
         <div class="main-catalog__wrapper">
           <img src="https://via.placeholder.com/50x53" alt="" class="main-catalog__picture">
           <h2 class="main-catalog__caption">Похудение</h2>
@@ -45,7 +45,7 @@
         <p class="main-catalog__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
         <a href="catalog/pohudenie.html" class="main-catalog">Каталог Slim</a>
       </article>
-      <article class="main-catalot__item">
+      <article class="main-catalog__item">
         <div class="main-catalog__wrapper">
           <img src="https://via.placeholder.com/50x53" alt="" class="main-catalog__picture">
           <h2 class="main-catalog__caption">Набор массы</h2>
@@ -55,20 +55,52 @@
       </article>
     </section>
     <section class="advantages">
-      <ul class="advantages-list">
-        <li class="advantages__item advantages--leaf"><!-- Пока не очень понимаю, здесь картинка должна быть через Img или псевдоэлементом через доп класс, пока добавил класс модификатор для картинки -->
+      <ul class="advantages__list">
+        <li class="advantages__item advantages__item--leaf">
           <span class="advantages__text">Функциональное питание содержит только полезные питательные вещества.</span>
         </li>
-        <li class="advantages__item advantages--flask">
+        <li class="advantages__item advantages__item--flask">
           <span class="advantages__text">Функциональное питание содержит только полезные питательные вещества.</span>
         </li>
-        <li class="advantages__item advantages--fork">
+        <li class="advantages__item advantages__item--fork">
           <span class="advantages__text">Замените один-два приема обычной еды на наше функциональное питание.</span>
         </li>
-        <li class="advantages__item advantages--clock">
+        <li class="advantages__item advantages__item--clock">
           <span class="advantages__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</span>
         </li>
       </ul>
+    </section>
+    <section class="example">
+      <h2 class="example__caption">Живой пример</h2>
+      <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+      <div class="example__stats stats">
+        <dl class="stats__item">
+          <dt class="stats__title">5 кг</dt>
+          <dd class="stats__text">Снижение веса</dd>
+        </dl>
+        <dl class="stats__item">
+          <dt class="stats__title">60 дней</dt>
+          <dd class="stats__text">Затрачено времени</dd>
+        </dl>
+        <h3 class="example__caption example__caption--middle"></h3>
+        <div class="example__compare compare"></div>
+          <img src="https://via.placeholder.com/312x232" alt="Кот до диеты" class="compare__picture">
+          <img src="https://via.placeholder.com/312x232" alt="Кот до диеты" class="compare__picture comparee__picture--hiddene">
+          <div class="slider">
+            <span class="slider__text">Было</span>
+            <span class="slider__toggle"></span>
+            <span class="slider__text">Стало</span>
+          </div>
+      </div>
+    </section>
+    <section class="contants">
+      <div class="contacts__info">
+        <p class="contacts__caption">приглашаем к сотрудничеству дилеров!</p>
+        <p class="contants__addres">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
+      <div class="contacts__map">
+        <img src="https://via.placeholder.com/320x362" alt="" class="">
+      </div>
     </section>
   </main>
   <footer class="footer">
