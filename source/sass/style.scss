@@ -1,2 +1,10 @@
 // Начните писать стили здесь
-body { background: red; }
+@import "mixin.scss";
+@import "page.scss";
+@import "header.scss";
+@import "nav.scss";
+@import "offer.scss";
+
+* {
+  box-sizing: border-box;
+}

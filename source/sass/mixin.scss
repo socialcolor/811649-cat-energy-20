@@ -1,0 +1,4 @@
+@mixin font($weight) {
+  font-family: "oswald", "Arial", sans-serif;
+  font-weight: $weight;
+}
