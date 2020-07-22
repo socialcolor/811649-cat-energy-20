@@ -1,0 +1,37 @@
+.footer {
+  background-color: #F2F2F2;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 15px;
+}
+
+.footer__link {
+  display: block;
+  text-align: center;
+}
+
+.footer__social {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer__copyright {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer__text {
+  @include arial(400);
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  padding-top: 14px;
+}
+
+.footer__link--margin {
+  padding-top: 4px;
+  margin-right: -6px;
+}

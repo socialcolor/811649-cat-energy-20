@@ -1,7 +1,9 @@
 .offer {
   text-align: center;
   position: relative;
+  margin-bottom: 33px;
 }
+
 .offer__box {
   position: relative;
   padding-top: 27px;
@@ -16,24 +18,25 @@
   color: #ffffff;
   text-align: center;
 }
+
 .offer__caption {
-  @include font(normal);
+  @include oswald(400);
   font-size: 36px;
   line-height: 36px;
   margin: 0;
   margin-bottom: 25px;
 }
+
 .offer__text {
   margin: 0;
-  @include font(medium);
+  @include oswald(400);
   text-transform: uppercase;
   font-size: 14px;
   line-height: 14px;
 }
+
 .offer__picture {
   position: absolute;
   bottom: 33px;
   left: 20px;
-}
-.offer__button {
 }

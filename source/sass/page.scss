@@ -2,21 +2,29 @@
   font-family: 'oswald';
   src: url('../fonts/oswaldmedium.woff2') format('woff2');
   src: url('../fonts/oswaldmedium.woff') format('woff');
-  font-weight: medium;
+  font-weight: 500;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'oswald';
   src: url('../fonts/oswaldregular.woff2') format('woff2');
   src: url('../fonts/oswaldregular.woff') format('woff');
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 .page {
   width: 320px;
   margin: auto;
-  outline: 1px solid red;
 }
+
 .visually-hidden {
   overflow: hidden;
   position: absolute;
@@ -27,16 +35,18 @@
   margin: -1px;
   clip: rect(0 0 0 0);
 }
+
 img {
   max-width: 100%;
 }
+
 .button {
   min-width: 280px;
   padding: 9px 73px;
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
-  @include font(normal);
+  @include oswald(400);
   text-transform: uppercase;
   background-color: #68B738;
   text-decoration: none;

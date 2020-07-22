@@ -12,7 +12,10 @@
       <img src="img/logo-mobile.svg" alt="Логотип магазина Cat Energy" class="logo__img" width="191" height="37">
     </a>
     <nav class="header__nav nav">
-      <button class="nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
+      <button class="nav__toggle">
+        <img src="img/icon-mobile-menu.svg" alt="Открыть меню" width="24" height="18">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
       <ul class="nav__list">
         <li class="nav__item">
           <a href="#" class="nav__link">Главная</a>
@@ -39,28 +42,48 @@
     <section class="main-catalog">
       <article class="main-catalog__item">
         <div class="main-catalog__wrapper">
-          <img src="https://via.placeholder.com/50x53" alt="" class="main-catalog__picture">
+          <img src="img/icon-cat-slim.svg" alt="" class="main-catalog__picture main-catalog__picture--cat-slim" width="36" height="50">
           <h2 class="main-catalog__caption">Похудение</h2>
         </div>
         <p class="main-catalog__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-        <a href="catalog/pohudenie.html" class="main-catalog">Каталог Slim</a>
+        <a href="catalog/pohudenie.html" class="main-catalog__button">Каталог Slim<svg version="1.1" id="Layer_1" wigth="24" height="11"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24.2 11" style="enable-background:new 0 0 24.2 11;" xml:space="preserve">
+            <style type="text/css">
+              .st0 {
+                fill: #3F4242;
+              }
+            </style>
+            <polygon class="st0" points="17.6,0 24.2,5.5 17.6,11 17.6,6.6 0,6.6 0,4.4 17.6,4.4 "/>
+          </svg>
+          </a>
       </article>
       <article class="main-catalog__item">
         <div class="main-catalog__wrapper">
-          <img src="https://via.placeholder.com/50x53" alt="" class="main-catalog__picture">
+          <img src="img/icon-cat-pro.svg" alt="" class="main-catalog__picture main-catalog__picture--cat-pro" width="67" height="28">
           <h2 class="main-catalog__caption">Набор массы</h2>
         </div>
         <p class="main-catalog__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-        <a href="catalog/pohudenie.html" class="main-catalog">Каталог Pro</a>
+        <a href="catalog/pohudenie.html" class="main-catalog__button">Каталог Pro<svg version="1.1" id="Layer_1" wigth="24" height="11"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24.2 11" style="enable-background:new 0 0 24.2 11;" xml:space="preserve">
+          <style type="text/css">
+            .st0 {
+              fill: #3F4242;
+            }
+          </style>
+          <polygon class="st0" points="17.6,0 24.2,5.5 17.6,11 17.6,6.6 0,6.6 0,4.4 17.6,4.4 "/>
+        </svg></a>
       </article>
     </section>
     <section class="advantages">
+      <h2 class="advantages__caption">Как это работает</h2>
       <ul class="advantages__list">
         <li class="advantages__item advantages__item--leaf">
           <span class="advantages__text">Функциональное питание содержит только полезные питательные вещества.</span>
         </li>
         <li class="advantages__item advantages__item--flask">
-          <span class="advantages__text">Функциональное питание содержит только полезные питательные вещества.</span>
+          <span class="advantages__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</span>
         </li>
         <li class="advantages__item advantages__item--fork">
           <span class="advantages__text">Замените один-два приема обычной еды на наше функциональное питание.</span>
@@ -104,28 +127,30 @@
     </section>
   </main>
   <footer class="footer">
-    <span class="footer__store-name store-name"><b>Cat</b> Energy</span>
+    <a class="footer__link">
+      <img src="img/logo-footer.svg" alt="Логотип Cat Energy" class="footer__img" width="128" height="24">
+    </a>
     <ul class="footer__social social">
-      <li class="social__item">
-        <a href="" class="social__link social__link--vk">
-          <span class="visually-hidden">Мы в вконтаткте</span>
+      <li class="social__item  social__item--vk">
+        <a href="#" class="social__link">
+          <img src="img/icon-vk.svg" alt="" class="social__img" width="23" height="16">
         </a>
       </li>
-      <li class="social__item">
-        <a href="" class="social__link social__link--inst">
-          <span class="visually-hidden">Мы в инстаграм</span>
+      <li class="social__item social__item--inst">
+        <a href="#" class="social__link">
+          <img src="img/icon-insta.svg" alt="Мы в вконтаткте" class="social__img" width="16" height="16">
         </a>
       </li>
-      <li class="social__item">
-        <a href="" class="social__link social__link--fb">
-          <span class="visually-hidden">Мы в фейсбук</span>
+      <li class="social__item social__item--fb">
+        <a href="#" class="social__link">
+          <img src="img/icon-fb.svg" alt="Мы в фейсбук" class="social__img" width="22" height="22">
         </a>
       </li>
     </ul>
-    <div class="footer__copyright copyright">
-      <span class="copyright__name">HTML Academy</span>
-      <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
-      <img src="https://via.placeholder.com/27x34" alt="Логотип html academy" class="copyright__picture">
+    <div class="footer__copyright">
+      <span class="footer__text">HTML Academy</span>
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__link footer__link--margin">
+        <img src="img/htmlacademy.svg" alt="Логотип html academy" class="footer__img" width="40" height="40">
       </a>
     </div>
   </footer>
