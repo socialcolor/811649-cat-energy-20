@@ -1,0 +1,57 @@
+.product {
+  padding-left: 21px;
+  padding-right: 20px;
+}
+
+.product__box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.product__img-box {
+  width: 50%;
+}
+
+.product__info-box {
+  width: 50%;
+  padding-top: 21px;
+}
+
+.product__link {
+  text-decoration: none;
+}
+
+.product__caption {
+  width: 76px;
+  margin: 0;
+  @include oswald(400);
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.product__feature {
+  @include arial(400);
+  font-size: 12px;
+  line-height: 16px;
+  color: #222222;
+}
+
+.product__feature-name {
+  padding: 0;
+}
+
+.product__feature-value {
+  padding: 0;
+}
+
+.product__button {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  line-height: 0px;
+  padding: 20px;
+}

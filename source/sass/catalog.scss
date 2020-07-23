@@ -1,0 +1,11 @@
+.catalog__headline {
+  @include oswald(400);
+  font-size: 36px;
+  line-height: 36px;
+  border-top: 1px solid #EBEBEB;
+  border-bottom: 1px solid #EBEBEB;
+  margin: 0;
+  padding-top: 27px;
+  padding-left: 20px;
+  padding-bottom: 40px;
+}

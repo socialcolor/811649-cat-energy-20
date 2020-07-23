@@ -4,15 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Оставить заявку</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page">
   <header class="header">
     <a href="index.html" class="header__link logo">
-      <img src="https://via.placeholder.com/33x33" alt="Логотип магазина Cat Energy" class="logo__img">
+      <img src="img/logo-mobile.svg" alt="Логотип магазина Cat Energy" class="logo__img" width="191" height="37">
     </a>
-    <span class="header__store-name store-name"><b>Cat<b> Energy</span>
     <nav class="header__nav nav">
-      <button class="nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
+      <button class="nav__toggle">
+        <img src="img/icon-mobile-menu.svg" alt="Открыть меню" width="24" height="18">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
       <ul class="nav__list">
         <li class="nav__item">
           <a href="#" class="nav__link">Главная</a>
@@ -28,7 +31,7 @@
   </header>
   <main class="form-page">
     <h1 class="form-page__caption">Подбор программы</h1>
-    <p class="fotm-page__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    <p class="form-page__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     <form action="https://echo.htmlacademy.ru" method="POST" class="form">
       <fieldset class="form__box">
         <label class="form__name">
@@ -88,13 +91,13 @@
           Витамины
         </label>
       </fieldset>
-      <button type="submit" class="fomr__button button">Отправить заявку</button>
+      <button type="submit" class="form__button button">Отправить заявку</button>
       <span class="form__info-text">* — Обязательные поля</span>
     </form>
-    <section class="contants">
+    <section class="contacts">
       <div class="contacts__info">
         <p class="contacts__caption">приглашаем к сотрудничеству дилеров!</p>
-        <p class="contants__addres">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <p class="contacts_addres">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
       <div class="contacts__map">
         <img src="https://via.placeholder.com/320x362" alt="" class="">
@@ -102,28 +105,30 @@
     </section>
   </main>
   <footer class="footer">
-    <span class="footer__store-name store-name"><b>Cat</b> Energy</span>
+    <a href="index.html" class="footer__link">
+      <img src="img/logo-footer.svg" alt="Логотип Cat Energy" class="footer__img" width="128" height="24">
+    </a>
     <ul class="footer__social social">
-      <li class="social__item">
-        <a href="" class="social__link social__link--vk">
-          <span class="visually-hidden">Мы в вконтаткте</span>
+      <li class="social__item  social__item--vk">
+        <a href="#" class="social__link">
+          <img src="img/icon-vk.svg" alt="" class="social__img" width="23" height="16">
         </a>
       </li>
-      <li class="social__item">
-        <a href="" class="social__link social__link--inst">
-          <span class="visually-hidden">Мы в инстаграм</span>
+      <li class="social__item social__item--inst">
+        <a href="#" class="social__link">
+          <img src="img/icon-insta.svg" alt="Мы в вконтаткте" class="social__img" width="16" height="16">
         </a>
       </li>
-      <li class="social__item">
-        <a href="" class="social__link social__link--fb">
-          <span class="visually-hidden">Мы в фейсбук</span>
+      <li class="social__item social__item--fb">
+        <a href="#" class="social__link">
+          <img src="img/icon-fb.svg" alt="Мы в фейсбук" class="social__img" width="22" height="22">
         </a>
       </li>
     </ul>
-    <div class="footer__copyright copyright">
-      <span class="copyright__name">HTML Academy</span>
-      <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
-      <img src="https://via.placeholder.com/27x34" alt="Логотип html academy" class="copyright__picture">
+    <div class="footer__copyright">
+      <span class="footer__text">HTML Academy</span>
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__link footer__link--margin">
+        <img src="img/htmlacademy.svg" alt="Логотип html academy" class="footer__img" width="40" height="40">
       </a>
     </div>
   </footer>
