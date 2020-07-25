@@ -9,3 +9,21 @@
   background-color: $basic_green;
   text-decoration: none;
 }
+
+.button--product-button {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  line-height: 0px;
+  margin-top: 0px;
+  padding: 20px;
+}
+
+.button--more-product {
+  font-size: 16px;
+  display: block;
+  padding: 11px 0;
+  background-color: $basic_grey;
+  text-align: center;
+  color: $special_dark_grey;
+}
