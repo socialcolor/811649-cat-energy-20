@@ -1,0 +1,19 @@
+.form-page {
+  padding-left: 20px;
+}
+
+.form-page__caption {
+  @include oswald(400);
+  font-size: 36px;
+  line-height: 36px;
+  margin-top: 26px;
+}
+
+.form-page__description {
+  @include oswald(400);
+  width: 226px;
+  margin-top: 38px;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
