@@ -3,15 +3,18 @@
   font-size: 36px;
   line-height: 36px;
   margin-top: 26px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .form-page__description {
   @include oswald(400);
-  width: 226px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-top: 38px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   padding-left: 20px;
-  padding-right: 20px;
+  padding-right: 50px;
 }

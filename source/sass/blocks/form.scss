@@ -9,13 +9,19 @@
   padding: 0;
   margin: 0;
   display: flex;
+  border-bottom: 1px solid $special_grey-2;
 }
 
 .form__label {
   display: flex;
   justify-content: flex-start;
   margin-bottom: 14px;
-  border: 1px solid $special_grey-2;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  &:last-child {
+    margin-bottom: 22px;
+  }
 }
 
 .form__name {
@@ -39,15 +45,50 @@
   padding-bottom: 12px;
 }
 
-.form__input-radio {
-  display: none;
+.form__box--radio {
+  margin: 0;
+  padding-top: 22px;
 }
 
-.form__input-text--phone-icon {
+.form__label--radio .form__name {
+  padding-top: 0;
+}
+
+.form__input-radio {
+  display: none;
+
+  &:checked+.form__label--radio::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 13px;
+    height: 13px;
+    background-color: $basic_green;
+    border-radius: 50%;
+    top: 8px;
+    left: 29px;
+  }
+}
+
+.form__label--radio {
+  position: relative;
+  padding: 0;
+  padding-left: 20px;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 13px;
+
+  &:last-child {
+    margin-bottom: 19px;
+  }
+
   &::before {
     content: "";
+    display: block;
+    border: 1px solid $input_gray;
     width: 30px;
     height: 30px;
-    border: 1px solid $input__gray;
+    border-radius: 50%;
+    margin-right: 15px;
   }
 }
