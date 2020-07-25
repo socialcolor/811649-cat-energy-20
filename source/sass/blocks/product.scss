@@ -24,20 +24,20 @@
 }
 
 .product__caption {
+  @include oswald(400);
   width: 76px;
   margin: 0;
-  @include oswald(400);
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #222222;
+  color: $special_dark-grey-2;
 }
 
 .product__feature {
   @include arial(400);
   font-size: 12px;
   line-height: 16px;
-  color: #222222;
+  color: $special_dark-grey-2;
 }
 
 .product__feature-name {
