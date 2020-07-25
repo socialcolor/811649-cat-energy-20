@@ -1,0 +1,39 @@
+.slider {
+  width: 218px;
+  margin: auto;
+  padding-top: 27px;
+  padding-bottom: 5px;
+  padding-left: 14px;
+  padding-right: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider__text {
+  @include oswald(400);
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.slider__toggle {
+  width: 84px;
+  height: 14px;
+  padding-top: 3px;
+  padding-bottom: 4px;
+  padding-left: 6px;
+  padding-right: 6px;
+  margin-top: 3px;
+  background-color: $white;
+  border: 1px solid $special_grey;
+  border-radius: 6px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 6px;
+    background-color: $basic_green;
+    border-radius: 6px;
+  }
+}

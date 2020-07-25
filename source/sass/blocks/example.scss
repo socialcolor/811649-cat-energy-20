@@ -1,4 +1,43 @@
 .example {
+  background-color: $basic_grey-3;
+  padding-bottom: 31px;
+}
+
+.example__wrapper {
   padding-left: 20px;
   padding-right: 21px;
+  padding-top: 27px;
+}
+
+.example__caption {
+  @include oswald(400);
+  font-size: 36px;
+  line-height: 40px;
+  margin: 0;
+  margin-bottom: 33px;
+}
+
+.example__description {
+  @include arial(400);
+  margin-bottom: 9px;
+  color: $special_dark_grey;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.example__caption--middle {
+  @include oswald(400);
+  margin-top: 22px;
+  font-size: 14px;
+  line-height: 12px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.example__compare {
+  padding-top: 4px;
+}
+
+.example__picture__picture--hidden {
+  display: none;
 }

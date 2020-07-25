@@ -20,7 +20,7 @@
   box-sizing: border-box;
 }
 
-.page {
+body {
   width: 320px;
   margin: auto;
   outline: 1px solid red;
@@ -39,4 +39,5 @@
 
 img {
   max-width: 100%;
+  height: auto;
 }

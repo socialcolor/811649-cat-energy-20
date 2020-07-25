@@ -1,7 +1,7 @@
 .offer {
   text-align: center;
   position: relative;
-  margin-bottom: 33px;
+  padding-bottom: 33px;
 }
 
 .offer__box {
@@ -10,7 +10,7 @@
   padding-left: 36px;
   padding-right: 35px;
   padding-bottom: 166px;
-  margin-bottom: 146px;
+  margin-bottom: 147px;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -37,6 +37,6 @@
 
 .offer__picture {
   position: absolute;
-  bottom: 33px;
+  bottom: 65px;
   left: 20px;
 }
