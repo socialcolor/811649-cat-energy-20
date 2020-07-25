@@ -1,0 +1,39 @@
+.other-products {
+  padding-top: 7px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.other-products__caption {
+  @include oswald(400);
+  position: relative;
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 20px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    right: -20px;
+    width: 53px;
+    height: 2px;
+    background-color: $basic_green;
+  }
+}
+
+.other-products__list {
+  padding: 0;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  list-style-type: none;
+  border-bottom: 1px solid $special_grey-2;
+}
+
+.other-products__item {
+  margin-bottom: 17px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
