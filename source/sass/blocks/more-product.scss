@@ -5,13 +5,13 @@
   padding-bottom: 24px;
   border-bottom: 1px solid $special_grey-2;
 
-  &:before {
-    content: '';
+  &::before {
+    content: "";
     display: block;
     width: 30px;
     height: 30px;
     margin: auto;
-    background-image: url('../../img/icon-plus.svg');
+    background-image: url("../../img/icon-plus.svg");
   }
 }
 
@@ -28,11 +28,10 @@
 
 .more-product__text {
   @include arial(400);
+  color: $special_dark_grey;
   font-size: 12px;
   line-height: 16px;
   text-align: center;
-  color:$special_dark_grey;
   margin-top: 7px;
   margin-bottom: 22px;
 }
-

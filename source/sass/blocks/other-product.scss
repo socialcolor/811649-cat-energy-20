@@ -5,12 +5,12 @@
 
 .other-product__caption {
   @include oswald(400);
+  color: $special_dark_grey-2;
   font-size: 16px;
   line-height: 16px;
   padding-left: 2px;
   margin-bottom: 9px;
   text-transform: uppercase;
-  color: $special_dark_grey-2
 }
 
 .other-products__feature {
@@ -31,4 +31,3 @@
 .other-product__feature-value {
   text-align: right;
 }
-

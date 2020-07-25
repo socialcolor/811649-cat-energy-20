@@ -1,7 +1,7 @@
 .form {
   margin: 0;
   padding: 0;
-  padding-top: 26px;
+  padding-top: 25px;
 }
 
 .form__box {
@@ -11,28 +11,43 @@
   display: flex;
 }
 
+.form__label {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 14px;
+  border: 1px solid $special_grey-2;
+}
+
 .form__name {
   @include oswald(400);
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  display: flex;
-  align-items: center;
+  margin-right: 14px;
+  padding-top: 13px;
 }
 
 .form__input-text {
-  max-width: 228px;
-  min-width: 172px;
-  margin-left: 14px;
-  padding-top: 10px;
-  padding-bottom: 12px;
-  padding-left: 13px;
+  @include oswald(400);
+  border: 1px solid $input_gray;
   flex-grow: 1;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-top: 13px;
+  padding-left: 13px;
+  padding-bottom: 12px;
+}
 
-  &::placeholder {
-    @include oswald(400);
-    font-size: 16px;
-    line-height: 18px;
-    text-transform: uppercase;
+.form__input-radio {
+  display: none;
+}
+
+.form__input-text--phone-icon {
+  &::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    border: 1px solid $input__gray;
   }
 }

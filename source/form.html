@@ -32,46 +32,46 @@
       </ul>
     </nav>
   </header>
-  <main class="form-page">
+  <main>
     <h1 class="form-page__caption">Подбор программы</h1>
     <p class="form-page__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     <form action="https://echo.htmlacademy.ru" method="POST" class="form">
       <fieldset class="form__box">
-        <label class="form__name">
-          Имя:*
+        <label class="form__label">
+          <span class="form__name">Имя:*</span>
           <input type="text" name="name" placeholder="Барсик" class="form__input-text">
         </label>
-        <label class="form__name">
-          Вес (КГ):*
+        <label class="form__label">
+          <span class="form__name">Вес (КГ):*</span>
           <input type="text" name="weight" placeholder="7" class="form__input-text">
         </label>
-        <label class="form__name">
-          Возраст (лет):*
+        <label class="form__label">
+          <span class="form__name">Возраст (лет):</span>
           <input type="text" name="old" placeholder="7" class="form__input-text">
         </label>
       </fieldset>
       <fieldset class="form__box">
-        <label class="form__name">
+        <label class="form__label">
           <input type="radio" name="target" class="form__input-radio" checked>
-          Похудение
+          <span class="form__name">Похудение</span>
         </label>
-        <label class="form__name">
+        <label class="form__label">
           <input type="radio" name="target" class="form__input-radio">
-          Набор массы
+          <span class="form__name">Набор массы</span>
         </label>
-        <label class="form__name">
+        <label class="form__label">
           <input type="radio" name="target" class="form__input-radio">
-          Не знаю (Нужен ваш совет)
+          <span class="form__name">Не знаю (Нужен ваш совет)</span>
         </label>
       </fieldset>
       <p class="form__caption">Контактные данные (владельца кота)</p>
-      <label class="form__name">
-        e-mail*
+      <label class="form__label">
+        <span class="form__name">e-mail*</span>
         <input type="email" name="email" placeholder="kuklachev@gmail.com"
           class="form__input-text form__input-text--email-icon" placeholder="">
       </label>
-      <label class="form__name">
-        Телефон*
+      <label class="form__label">
+        <span class="form__name">Телефон*</span>
         <input type="tel" name="phone" placeholder="8 (960) 900-60-90"
           class="form__input-text form__input-text--phone-icon">
       </label>
@@ -79,21 +79,21 @@
       <textarea name="Подробнее" cols="30" rows="10">Расскажите обо всех повадках кота</textarea>
       <p class="form__caption">Дополнительно</p>
       <fieldset class="form__box">
-        <label class="form__name">
+        <label class="form__label">
           <input type="checkbox" name="options" checked>
-          Сахарозаменитель
+          <span class="form__name">Сахарозаменитель</span>
         </label>
-        <label class="form__name">
+        <label class="form__label">
           <input type="checkbox" name="options">
-          Питьевая вода
+          <span class="form__name">Питьевая вода</span>
         </label>
-        <label class="form__name">
+        <label class="form__label">
           <input type="checkbox" name="options">
-          Молоко
+          <span class="form__name">Молоко</span>
         </label>
-        <label class="form__name">
+        <label class="form__label">
           <input type="checkbox" name="options">
-          Витамины
+          <span class="form__name">Витамины</span>
         </label>
       </fieldset>
       <button type="submit" class="form__button button">Отправить заявку</button>
