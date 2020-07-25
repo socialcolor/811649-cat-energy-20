@@ -1,14 +1,12 @@
 .header {
   padding-top: 11px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+.header__link {
+  height: 43px;
   padding-right: 20px;
   padding-left: 20px;
-  padding-bottom: 13px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.test {
-  width: 320px;
-  margin: auto;
-  outline: 1px solid red;
 }

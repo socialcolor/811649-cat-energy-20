@@ -1,9 +1,5 @@
 .nav {
-  padding-top: 13px;
-}
-
-.nav__list {
-  display: none;
+  padding-top: 12px;
 }
 
 .nav__toggle {
@@ -16,4 +12,33 @@
   position: absolute;
   right: 20px;
   top: 23px;
+}
+
+.nav__list {
+  display: none;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__list--active {
+  display: flex;
+}
+
+.nav__item {
+  text-align: center;
+  border-top: 1px solid $basic_grey_dark;
+  padding-top: 22px;
+  padding-bottom: 19px;
+}
+
+.nav__link {
+  @include oswald(500);
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: $black;
 }

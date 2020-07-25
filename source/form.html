@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Оставить заявку</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="page">
   <header class="header">
     <a href="index.html" class="header__link logo">
@@ -64,11 +66,13 @@
       <p class="form__caption">Контактные данные (владельца кота)</p>
       <label class="form__name">
         e-mail*
-        <input type="email" name="email" placeholder="kuklachev@gmail.com" class="form__input-text form__input-text--email-icon" placeholder="">
+        <input type="email" name="email" placeholder="kuklachev@gmail.com"
+          class="form__input-text form__input-text--email-icon" placeholder="">
       </label>
       <label class="form__name">
         Телефон*
-        <input type="tel" name="phone" placeholder="8 (960) 900-60-90" class="form__input-text form__input-text--phone-icon">
+        <input type="tel" name="phone" placeholder="8 (960) 900-60-90"
+          class="form__input-text form__input-text--phone-icon">
       </label>
       <p class="form__caption">Комментарий</p>
       <textarea name="Подробнее" cols="30" rows="10">Расскажите обо всех повадках кота</textarea>
@@ -94,43 +98,47 @@
       <button type="submit" class="form__button button">Отправить заявку</button>
       <span class="form__info-text">* — Обязательные поля</span>
     </form>
-    <section class="contacts">
-      <div class="contacts__info">
-        <p class="contacts__caption">приглашаем к сотрудничеству дилеров!</p>
-        <p class="contacts_addres">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      </div>
-      <div class="contacts__map">
-        <img src="https://via.placeholder.com/320x362" alt="" class="">
-      </div>
-    </section>
   </main>
   <footer class="footer">
-    <a href="index.html" class="footer__link">
-      <img src="img/logo-footer.svg" alt="Логотип Cat Energy" class="footer__img" width="128" height="24">
-    </a>
-    <ul class="footer__social social">
-      <li class="social__item  social__item--vk">
-        <a href="#" class="social__link">
-          <img src="img/icon-vk.svg" alt="" class="social__img" width="23" height="16">
-        </a>
-      </li>
-      <li class="social__item social__item--inst">
-        <a href="#" class="social__link">
-          <img src="img/icon-insta.svg" alt="Мы в вконтаткте" class="social__img" width="16" height="16">
-        </a>
-      </li>
-      <li class="social__item social__item--fb">
-        <a href="#" class="social__link">
-          <img src="img/icon-fb.svg" alt="Мы в фейсбук" class="social__img" width="22" height="22">
-        </a>
-      </li>
-    </ul>
-    <div class="footer__copyright">
-      <span class="footer__text">HTML Academy</span>
-      <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__link footer__link--margin">
-        <img src="img/htmlacademy.svg" alt="Логотип html academy" class="footer__img" width="40" height="40">
+    <section class="contacts">
+      <div class="contacts__info">
+        <p class="contacts__caption">приглашаем <br> к сотрудничеству<br>дилеров!</p>
+        <p class="contacts__addres">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
+      <div class="contacts__map">
+        <iframe class="contacts__google-map"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.32085871621117!3d59.9387191690541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1595676183974!5m2!1sru!2sru" width="320" height="362" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+    </section>
+    <section class="footer__box">
+      <a href="index.html" class="footer__link">
+        <img src="img/logo-footer.svg" alt="Логотип Cat Energy" class="footer__img" width="128" height="24">
       </a>
-    </div>
+      <ul class="footer__social social">
+        <li class="social__item  social__item--vk">
+          <a href="#" class="social__link">
+            <img src="img/icon-vk.svg" alt="" class="social__img" width="23" height="16">
+          </a>
+        </li>
+        <li class="social__item social__item--inst">
+          <a href="#" class="social__link">
+            <img src="img/icon-insta.svg" alt="Мы в вконтаткте" class="social__img" width="16" height="16">
+          </a>
+        </li>
+        <li class="social__item social__item--fb">
+          <a href="#" class="social__link">
+            <img src="img/icon-fb.svg" alt="Мы в фейсбуке" class="social__img" width="10" height="1">
+          </a>
+        </li>
+      </ul>
+      <div class="footer__copyright">
+        <span class="footer__text">HTML Academy</span>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__link footer__link--margin">
+          <img src="img/htmlacademy.svg" alt="Логотип html academy" class="footer__img" width="40" height="40">
+        </a>
+      </div>
+    </section>
   </footer>
+  <script src="js/common.js"></script>
 </body>
+
 </html>
