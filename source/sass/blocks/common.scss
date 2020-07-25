@@ -40,15 +40,3 @@
 img {
   max-width: 100%;
 }
-
-.button {
-  min-width: 280px;
-  padding: 9px 73px;
-  font-size: 14px;
-  line-height: 18px;
-  color: #ffffff;
-  @include oswald(400);
-  text-transform: uppercase;
-  background-color: #68B738;
-  text-decoration: none;
-}
