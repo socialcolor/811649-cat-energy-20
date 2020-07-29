@@ -8,6 +8,7 @@
   text-transform: uppercase;
   background-color: $basic_green;
   text-decoration: none;
+  border: none;
 }
 
 .button--product-button {
@@ -26,4 +27,14 @@
   background-color: $basic_grey;
   text-align: center;
   color: $special_dark_grey;
+}
+
+.button--form {
+  display: block;
+  margin: auto;
+  margin-top: 13px;
+  padding-top: 11px;
+  padding-bottom: 9px;
+  font-size: 16px;
+  line-height: 20px;
 }

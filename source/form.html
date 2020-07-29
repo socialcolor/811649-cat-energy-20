@@ -33,10 +33,12 @@
     </nav>
   </header>
   <main>
-    <h1 class="form-page__caption">Подбор программы</h1>
-    <p class="form-page__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    <div class="form-page">
+      <h1 class="form-page__caption">Подбор программы</h1>
+      <p class="form-page__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    </div>
     <form action="https://echo.htmlacademy.ru" method="POST" class="form">
-      <fieldset class="form__box">
+      <fieldset class="form__box form__box--border">
         <label class="form__label">
           <span class="form__name">Имя:*</span>
           <input type="text" name="name" placeholder="Барсик" class="form__input-text">
@@ -50,51 +52,56 @@
           <input type="text" name="old" placeholder="7" class="form__input-text">
         </label>
       </fieldset>
-      <fieldset class="form__box form__box--radio">
-        <input type="radio"id="slimming" name="target" class="form__input-radio" checked>
+      <fieldset class="form__box form__box--radio form__box--border">
+        <input type="radio" id="slimming" name="target" class="form__input form__input--radio" checked>
         <label for="slimming" class="form__label form__label--radio">
-          <span class="form__name">Похудение</span>
+          <span class="form__name form__name--radio">Похудение</span>
         </label>
-        <input type="radio" id="gain" name="target" class="form__input-radio">
+        <input type="radio" id="gain" name="target" class="form__input form__input--radio">
         <label for="gain" class="form__label form__label--radio">
-          <span class="form__name">Набор массы</span>
+          <span class="form__name form__name--radio">Набор массы</span>
         </label>
-        <input type="radio" id="other" name="target" class="form__input-radio">
+        <input type="radio" id="other" name="target" class="form__input form__input--radio">
         <label for="other" class="form__label form__label--radio">
-          <span class="form__name">Не знаю (Нужен ваш совет)</span>
+          <span class="form__name form__name--radio">Не знаю (Нужен ваш совет)</span>
         </label>
       </fieldset>
-      <p class="form__caption">Контактные данные (владельца кота)</p>
-      <label class="form__label">
-        <span class="form__name">e-mail*</span>
-        <input type="email" name="email" placeholder="kuklachev@gmail.com" class="form__input-text form__input-text--email-icon" placeholder="">
-      </label>
-      <label class="form__label">
-        <span class="form__name">Телефон*</span>
-        <input type="tel" name="phone" placeholder="8 (960) 900-60-90" class="form__input-text form__input-text--phone-icon">
-      </label>
-      <p class="form__caption">Комментарий</p>
-      <textarea name="Подробнее" cols="30" rows="10">Расскажите обо всех повадках кота</textarea>
-      <p class="form__caption">Дополнительно</p>
-      <fieldset class="form__box">
-        <label class="form__label">
-          <input type="checkbox" name="options" checked>
-          <span class="form__name">Сахарозаменитель</span>
+      <fieldset class="form__box form__box--green-line">
+          <p class="form__caption">Контактные данные (владельца кота)</p>
+          <label class="form__label">
+            <span class="form__name">e-mail*</span>
+            <input type="email" name="email" placeholder="kuklachev@gmail.com"
+              class="form__input-text form__input-text--email-icon" placeholder="">
+          </label>
+          <label class="form__label">
+            <span class="form__name">Телефон*</span>
+            <input type="tel" name="phone" placeholder="8 (960) 900-60-90" class="form__input-text form__input-text--phone-icon">
+          </label>
+      </fieldset>
+      <fieldset class="form__box form__box--comment form__box--green-line">
+          <p class="form__caption">Комментарий</p>
+          <textarea class="form__input-text form__input-text--comment" name="Подробнее">Расскажите обо всех повадках кота</textarea>
+      </fieldset>
+      <fieldset class="form__box form__box--option form__box--green-line">
+        <p class="form__caption form__caption--checkbox">Дополнительно</p>
+        <input id="sugar" class="form__input form__input--checkbox" type="checkbox" name="options" checked>
+        <label for="sugar" class="form__label form__label--checkbox">
+          <span class="form__name form__name--option">Сахарозаменитель</span>
         </label>
-        <label class="form__label">
-          <input type="checkbox" name="options">
-          <span class="form__name">Питьевая вода</span>
+        <input id="water" class="form__input form__input--checkbox" type="checkbox" name="options">
+        <label for="water" class="form__label form__label--checkbox">
+          <span class="form__name form__name--option">Питьевая вода</span>
         </label>
-        <label class="form__label">
-          <input type="checkbox" name="options">
-          <span class="form__name">Молоко</span>
+        <input id="milk" class="form__input form__input--checkbox" type="checkbox" name="options">
+        <label for="milk" class="form__label form__label--checkbox">
+          <span class="form__name form__name--option">Молоко</span>
         </label>
-        <label class="form__label">
-          <input type="checkbox" name="options">
-          <span class="form__name">Витамины</span>
+        <input id="vitamin" class="form__input form__input--checkbox" type="checkbox" name="options">
+        <label for="vitamin" class="form__label form__label--checkbox">
+          <span class="form__name form__name--option">Витамины</span>
         </label>
       </fieldset>
-      <button type="submit" class="form__button button">Отправить заявку</button>
+      <button type="submit" class="button button--form">Отправить заявку</button>
       <span class="form__info-text">* — Обязательные поля</span>
     </form>
   </main>
@@ -105,7 +112,9 @@
         <p class="contacts__addres">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
       <div class="contacts__map">
-        <iframe class="contacts__google-map"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.32085871621117!3d59.9387191690541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1595676183974!5m2!1sru!2sru" width="320" height="362" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <iframe class="contacts__google-map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.32085871621117!3d59.9387191690541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1595676183974!5m2!1sru!2sru"
+          width="320" height="362" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </div>
     </section>
     <section class="footer__box">
