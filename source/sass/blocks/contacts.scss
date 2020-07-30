@@ -1,0 +1,31 @@
+.contacts__info {
+  padding-top: 13px;
+  padding-bottom: 9px;
+  padding-left: 19px;
+  padding-right: 19px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__caption {
+  @include oswald(400);
+  width: 50%;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.contacts__addres {
+  @include arial(400);
+  width: 50%;
+  padding-top: 1px;
+  padding-left: 1px;
+  font-size: 14px;
+  line-height: 20px;
+  color: $special_dark_grey;
+}
+
+.contacts__google-map {
+  border: none;
+  display: block;
+}

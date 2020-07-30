@@ -1,5 +1,5 @@
 .product {
-  padding-left: 21px;
+  padding-left: 20px;
   padding-right: 20px;
 }
 
@@ -16,28 +16,36 @@
 
 .product__info-box {
   width: 50%;
-  padding-top: 21px;
+  padding-top: 20px;
 }
 
 .product__link {
   text-decoration: none;
 }
 
+.product__img {
+  display: block;
+}
+
 .product__caption {
-  width: 76px;
-  margin: 0;
   @include oswald(400);
+  padding-right: 43px;
+  margin: 0;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #222222;
+  color: $special_dark-grey-2;
 }
 
 .product__feature {
   @include arial(400);
+  width: 100%;
+  padding-top: 13px;
+  padding-left: 1px;
   font-size: 12px;
   line-height: 16px;
-  color: #222222;
+  border-spacing: 0;
+  color: $special_dark-grey-2;
 }
 
 .product__feature-name {
@@ -46,12 +54,5 @@
 
 .product__feature-value {
   padding: 0;
-}
-
-.product__button {
-  display: block;
-  text-align: center;
-  font-size: 16px;
-  line-height: 0px;
-  padding: 20px;
+  text-align: right;
 }
