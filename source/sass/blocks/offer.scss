@@ -18,6 +18,16 @@
   background-position: top center;
   color: $white;
   text-align: center;
+
+  @media only all and(min-width: 768px) {
+    background-image: none;
+    text-align: left;
+    padding: 0;
+    padding-top: 63px;
+    padding-left: 117px;
+    margin-bottom: 20px;
+    color: $black;
+  }
 }
 
 .offer__caption {
@@ -26,6 +36,13 @@
   line-height: 36px;
   margin: 0;
   margin-bottom: 25px;
+
+  @media only all and(min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 41px;
+    width: 70%;
+  }
 }
 
 .offer__text {
@@ -34,10 +51,33 @@
   text-transform: uppercase;
   font-size: 14px;
   line-height: 14px;
+
+  @media only all and(min-width: 768px) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .offer__picture {
   position: absolute;
   bottom: 65px;
   left: 20px;
+
+  @media only all and(min-width: 768px) {
+    position: static;
+    width: 709px;
+    height: auto;
+  }
+}
+
+.offer__button {
+  @media only all and(min-width: 768px) {
+    position: absolute;
+    min-width: 244px;
+    top: 293px;
+    left: 112px;
+    padding: 27px 0;
+    font-size: 20px;
+    line-height: 0px;
+  }
 }

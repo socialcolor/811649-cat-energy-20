@@ -12,7 +12,10 @@
 <body>
   <header class="header">
     <a class="header__link logo">
-      <img src="img/logo-mobile.svg" alt="Логотип магазина Cat Energy" class="logo__img" width="191" height="37">
+      <picture>
+        <source media="(min-width: 768px)" srcset="img/logo-tablet2.svg">
+        <img src="img/logo-mobile.svg" alt="Логотип магазина Cat Energy" class="logo__img" width="191" height="37">
+      </picture>
     </a>
     <nav class="header__nav nav">
       <button class="nav__toggle">
@@ -38,28 +41,26 @@
         <h2 class="offer__caption">Функциональное питание для котов</h2>
         <p class="offer__text">Занялся собой? Займись котом!</p>
       </div>
-      <img src="img/index-can-mobile@1x.png" alt="Корм для котово Cat Energy с курицей" class="offer__picture"
-        width="280" height="271">
-      <a href="form.html" class="button">Подобрать программу</a>
+      <picture>
+        <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
+        <img src="img/index-can-mobile@1x.png" alt="Корм для котово Cat Energy с курицей" class="offer__picture" width="280" height="271">
+      </picture>
+      <a href="form.html" class="button offer__button">Подобрать программу</a>
     </section>
     <section class="main-catalog">
       <h2 class="visually-hidden">Каталог товаров</h2>
       <article class="main-catalog__item">
         <div class="main-catalog__wrapper">
-          <img src="img/icon-cat-slim.svg" alt="" class="main-catalog__picture main-catalog__picture--cat-slim"
-            width="36" height="50">
+          <img src="img/icon-cat-slim.svg" alt="" class="main-catalog__picture main-catalog__picture--cat-slim" width="36" height="50">
           <h2 class="main-catalog__caption">Похудение</h2>
         </div>
         <p class="main-catalog__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
           Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-        <a href="catalog/pohudenie.html" class="main-catalog__button">Каталог Slim<svg version="1.1"
-            width="24" height="11" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-            y="0px" viewBox="0 0 24.2 11" style="enable-background:new 0 0 24.2 11;" xml:space="preserve">
+        <a href="catalog/pohudenie.html" class="main-catalog__button">Каталог Slim<svg version="1.1" width="24" height="11" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24.2 11" style="enable-background:new 0 0 24.2 11;" xml:space="preserve">
             <style type="text/css">
               .st0 {
                 fill: #3F4242;
               }
-
             </style>
             <polygon class="st0" points="17.6,0 24.2,5.5 17.6,11 17.6,6.6 0,6.6 0,4.4 17.6,4.4 " />
           </svg>
@@ -67,20 +68,16 @@
       </article>
       <article class="main-catalog__item">
         <div class="main-catalog__wrapper">
-          <img src="img/icon-cat-pro.svg" alt="" class="main-catalog__picture main-catalog__picture--cat-pro" width="67"
-            height="28">
+          <img src="img/icon-cat-pro.svg" alt="" class="main-catalog__picture main-catalog__picture--cat-pro" width="67" height="28">
           <h2 class="main-catalog__caption">Набор массы</h2>
         </div>
         <p class="main-catalog__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy
           Pro поможет вашему коту нарастить необходимые мышцы!</p>
-        <a href="catalog/pohudenie.html" class="main-catalog__button">Каталог Pro<svg version="1.1"
-            width="24" height="11" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-            y="0px" viewBox="0 0 24.2 11" style="enable-background:new 0 0 24.2 11;" xml:space="preserve">
+        <a href="catalog/pohudenie.html" class="main-catalog__button">Каталог Pro<svg version="1.1" width="24" height="11" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24.2 11" style="enable-background:new 0 0 24.2 11;" xml:space="preserve">
             <style type="text/css">
               .st0 {
                 fill: #3F4242;
               }
-
             </style>
             <polygon class="st0" points="17.6,0 24.2,5.5 17.6,11 17.6,6.6 0,6.6 0,4.4 17.6,4.4 " />
           </svg></a>
@@ -123,8 +120,7 @@
       </div>
       <div class="example__compare">
         <img src="img/before-mobile@1x.png" alt="Кот до диеты" class="example__picture" width="320" height="240">
-        <img src="img/after-mobile@1x.png" alt="Кот после диеты"
-          class="example__picture__picture example__picture__picture--hidden" width="320" height="240">
+        <img src="img/after-mobile@1x.png" alt="Кот после диеты" class="example__picture__picture example__picture__picture--hidden" width="320" height="240">
       </div>
       <div class="slider">
         <span class="slider__text">Было</span>

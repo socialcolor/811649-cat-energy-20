@@ -1,5 +1,10 @@
 .nav {
   padding-top: 12px;
+
+  @media only all and (min-width: 768px) {
+    padding-top: 0;
+    width: 70%;
+  }
 }
 
 .nav__toggle {
@@ -12,6 +17,10 @@
   position: absolute;
   right: 20px;
   top: 23px;
+
+  @media only all and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .nav__list {
@@ -20,6 +29,13 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+
+  @media only all and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    padding-top: 18px;
+    margin-left: 57px;
+  }
 }
 
 .nav__list--active {
@@ -29,6 +45,15 @@
 .nav__item {
   text-align: center;
   border-top: 1px solid $basic_grey_dark;
+
+  @media only all and (min-width: 768px) {
+    border: none;
+    margin-right: 34px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 .nav__link {
@@ -42,4 +67,11 @@
   display: block;
   padding-top: 22px;
   padding-bottom: 23px;
+
+  @media only all and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    padding: 0;
+  }
 }
