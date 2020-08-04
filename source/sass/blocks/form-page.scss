@@ -7,12 +7,16 @@
   @include oswald(400);
   font-size: 36px;
   line-height: 36px;
+  margin: 0;
   margin-top: 26px;
+  margin-bottom: 24px;
 }
 
 .form-page__description {
   @include oswald(400);
+  margin: 0;
   margin-top: 38px;
+  margin-bottom: 14px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;

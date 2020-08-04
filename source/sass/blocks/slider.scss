@@ -1,10 +1,10 @@
 .slider {
-  width: 218px;
+  width: 70%;
   margin: auto;
   padding-top: 27px;
   padding-bottom: 5px;
-  padding-left: 14px;
-  padding-right: 8px;
+  padding-right: 11px;
+  padding-left: 16px;
   display: flex;
   justify-content: space-between;
 }
@@ -17,12 +17,13 @@
 }
 
 .slider__toggle {
-  width: 84px;
+  width: 43%;
   height: 14px;
   padding-top: 3px;
   padding-bottom: 4px;
   padding-left: 6px;
   padding-right: 6px;
+  margin: 0;
   margin-top: 3px;
   background-color: $white;
   border: 1px solid $special_grey;
@@ -31,8 +32,8 @@
   &::before {
     content: "";
     display: block;
-    width: 35px;
-    height: 6px;
+    width: 50%;
+    height: 100%;
     background-color: $basic_green;
     border-radius: 6px;
   }

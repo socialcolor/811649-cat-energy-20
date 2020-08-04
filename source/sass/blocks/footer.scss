@@ -24,6 +24,7 @@
   flex-wrap: nowrap;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .footer__text {
@@ -31,10 +32,9 @@
   font-size: 16px;
   line-height: 18px;
   color: $special_dark-grey;
-  padding-top: 14px;
 }
 
 .footer__link--margin {
-  padding-top: 4px;
+  margin: 0;
   margin-right: -6px;
 }

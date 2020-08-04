@@ -23,7 +23,6 @@
 .main-catalog__wrapper::before {
   content: "";
   position: relative;
-  z-index: 998;
   display: block;
   top: 4px;
   left: 2px;
@@ -31,12 +30,16 @@
   height: 50px;
   background-color: $basic_green;
   border-radius: 50%;
+  margin: 0;
   margin-right: 20px;
+  flex-shrink: 0;
+  z-index: 1;
 }
 
 .main-catalog__picture {
   position: absolute;
-  z-index: 999;
+  z-index: 2;
+  margin: 0;
   margin-right: 26px;
   margin-bottom: 9px;
 }
@@ -66,18 +69,11 @@
   line-height: 18px;
   margin: 0;
   padding-top: 26px;
-  padding-bottom: 42px;
+  padding-bottom: 21px;
+  margin: 0;
+  margin-bottom: 20px;
   position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    display: block;
-    height: 1px;
-    width: 240px;
-    bottom: 20px;
-    background-color: $basic_grey-2;
-  }
+  border-bottom: 1px solid $basic_grey-2;
 }
 
 .main-catalog__button {
@@ -90,6 +86,7 @@
   text-decoration: none;
 
   svg {
+    margin: 0;
     margin-left: 14px;
   }
 }
