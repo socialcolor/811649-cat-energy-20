@@ -106,7 +106,7 @@
 .form__input--radio {
   display: none;
 
-  &:checked+.form__label--radio::after {
+  &:checked + .form__label--radio::after {
     content: "";
     position: absolute;
     display: block;
@@ -132,13 +132,12 @@
   &::after {
     content: "";
     display: block;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-left: 21px;
     width: 53px;
     height: 2px;
     background-color: #68b738;
     flex-grow: 1;
-    margin-top: 15px;
   }
 }
 
@@ -170,7 +169,7 @@
 .form__input--checkbox {
   display: none;
 
-  &:checked+.form__label--checkbox::before {
+  &:checked + .form__label--checkbox::before {
     content: "";
     width: 30px;
     height: 30px;
