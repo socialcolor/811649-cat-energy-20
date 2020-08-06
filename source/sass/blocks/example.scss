@@ -1,12 +1,25 @@
 .example {
   background-color: $basic_grey-3;
   padding-bottom: 31px;
+
+  @media only all and (min-width: 768px) {
+    margin: 0;
+    margin-top: 80px;
+    border-top: 1px solid $basic_grey;
+    background-color: $white;
+  }
 }
 
 .example__wrapper {
   padding-left: 20px;
   padding-right: 21px;
   padding-top: 27px;
+
+  @media only all and (min-width: 768px) {
+    padding: 0;
+    padding-top: 43px;
+    padding-left: 30px;
+  }
 }
 
 .example__caption {
@@ -15,6 +28,11 @@
   line-height: 40px;
   margin: 0;
   margin-bottom: 33px;
+
+  @media only all and (min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .example__description {
@@ -24,6 +42,11 @@
   color: $special_dark_grey;
   font-size: 14px;
   line-height: 18px;
+
+  @media only all and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .example__caption--middle {

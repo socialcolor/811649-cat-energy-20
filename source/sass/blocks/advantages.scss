@@ -20,6 +20,7 @@
     font-size: 60px;
     line-height: 60px;
     margin-top: 44px;
+    margin-bottom: 0;
   }
 }
 
@@ -28,11 +29,14 @@
   padding: 0;
 
   @media only all and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
     margin: 0;
-    display: grid;
+    margin-top: 72px;
     counter-reset: number;
-    grid-template-columns: 384px 384px;
-    grid-template-rows: 317px;
   }
 }
 
@@ -62,7 +66,9 @@
     flex-direction: column;
     padding: 0;
     margin: 0;
-    margin-top: 34px;
+    width: 300px;
+    margin-right: 34px;
+    margin-bottom: 133px;
 
     &::before {
       width: 80px;
@@ -79,7 +85,7 @@
       font-size: 280px;
       width: 142px;
       line-height: 200px;
-      right: 134px;
+      right: 50px;
       top: 0px;
       text-align: center;
     }
@@ -120,6 +126,6 @@
     font-size: 16px;
     line-height: 24px;
     margin-top: 30px;
-    max-width: 70%;
+    max-width: 88%;
   }
 }
