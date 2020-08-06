@@ -4,9 +4,10 @@
 
   @media only all and (min-width: 768px) {
     margin: 0;
-    margin-top: 80px;
+    margin-top: -53px;
+    padding-bottom: 64px;
     border-top: 1px solid $basic_grey;
-    background-color: $white;
+    background: linear-gradient(to bottom, $white 59%, $basic_grey-3 59%);
   }
 }
 
@@ -19,6 +20,7 @@
     padding: 0;
     padding-top: 43px;
     padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
@@ -46,6 +48,9 @@
   @media only all and (min-width: 768px) {
     font-size: 16px;
     line-height: 24px;
+    padding-right: 10px;
+    margin-top: 64px;
+    margin-bottom: 37px;
   }
 }
 
@@ -58,13 +63,57 @@
   line-height: 12px;
   text-transform: uppercase;
   text-align: center;
+
+  @media only all and (min-width: 768px) {
+    width: 180px;
+    text-align: right;
+    margin: 0;
+    margin-top: 24px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+.example__stats {
+  @media only all and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .example__compare {
   padding-top: 4px;
   text-align: center;
+
+  @media only all and (min-width: 768px) {
+    position: relative;
+    padding-top: 69px;
+    padding-left: 44px;
+    height: 575px;
+  }
 }
 
-.example__picture__picture--hidden {
+.example__picture {
+  @media only all and (min-width: 768px) {
+    width: 690px;
+  }
+}
+
+.example__picture--before {
+  @media only all and (min-width: 768px) {
+    position: absolute;
+    display: block;
+    clip: rect(auto, 345px, auto, auto);
+  }
+}
+
+.example__picture--after {
   display: none;
+
+  @media only all and (min-width: 768px) {
+    position: absolute;
+    top: 70px;
+    display: block;
+    clip: rect(auto, auto, auto, 345px);
+  }
 }

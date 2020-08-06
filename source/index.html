@@ -103,28 +103,36 @@
     <section class="example">
       <div class="example__wrapper">
         <h2 class="example__caption">Живой пример</h2>
-        <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
-          Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
-          16 часов в день. </p>
-        <div class="example__stats stats">
-          <dl class="stats__item">
-            <dt class="stats__title">5 кг</dt>
-            <dd class="stats__text">Снижение веса</dd>
-          </dl>
-          <dl class="stats__item">
-            <dt class="stats__title">60 дней</dt>
-            <dd class="stats__text">Затрачено времени</dd>
-          </dl>
+        <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+        <div class="example__stats">
+          <div class="stats">
+            <dl class="stats__item">
+              <dt class="stats__title">5 кг</dt>
+              <dd class="stats__text">Снижение веса</dd>
+            </dl>
+            <dl class="stats__item">
+              <dt class="stats__title">60 дней</dt>
+              <dd class="stats__text">Затрачено времени</dd>
+            </dl>
+          </div>
+          <h3 class="example__caption example__caption--middle">Затраты на питание: 15 000 РУБ.</h3>
         </div>
-        <h3 class="example__caption example__caption--middle">Затраты на питание: 15 000 РУБ.</h3>
       </div>
       <div class="example__compare">
-        <img src="img/before-mobile@1x.png" alt="Кот до диеты" class="example__picture" width="320" height="240">
-        <img src="img/after-mobile@1x.png" alt="Кот после диеты" class="example__picture__picture example__picture__picture--hidden" width="320" height="240">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
+          <img src="img/before-mobile@1x.png" alt="Кот до диеты" class="example__picture example__picture--before" width="320" height="240">
+        </picture>
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">
+          <img src="img/after-mobile@1x.png" alt="Кот после диеты" class="example__picture example__picture--after" width="320" height="240">
+        </picture>
       </div>
       <div class="slider">
         <span class="slider__text">Было</span>
-        <span class="slider__toggle"></span>
+        <span class="slider__toggle">
+          <span class="slider__button"></span>
+        </span>
         <span class="slider__text">Стало</span>
       </div>
     </section>
