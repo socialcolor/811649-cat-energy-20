@@ -29,11 +29,10 @@
 
   @media only all and (min-width: 768px) {
     margin: 0;
-    margin-top: 72px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    display: grid;
     counter-reset: number;
+    grid-template-columns: 384px 384px;
+    grid-template-rows: 317px;
   }
 }
 
@@ -59,10 +58,11 @@
   }
 
   @media only all and (min-width: 768px) {
-    width: 300px;
-    min-height: 297px;
     flex-wrap: wrap;
     flex-direction: column;
+    padding: 0;
+    margin: 0;
+    margin-top: 34px;
 
     &::before {
       width: 80px;
@@ -71,23 +71,17 @@
 
     &::after {
       @include oswald(400);
+      counter-increment: number;
+      content: counter(number);
       position: absolute;
       z-index: -1;
-      display: block;
-      width: 130px;
-      height: 300px;
-      content: counter(number);
-      counter-increment: number;
-      font-size: 280px;
-      line-height: 280px;
       color: $basic_grey;
-      bottom: 38px;
-      right: 60px;
+      font-size: 280px;
+      width: 142px;
+      line-height: 200px;
+      right: 134px;
+      top: 0px;
       text-align: center;
-    }
-
-    &:nth-child(odd) {
-      margin-right: 84px;
     }
   }
 }
@@ -126,6 +120,6 @@
     font-size: 16px;
     line-height: 24px;
     margin-top: 30px;
-    max-width: 230px;
+    max-width: 70%;
   }
 }
