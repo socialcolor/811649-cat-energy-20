@@ -5,6 +5,11 @@
     padding-top: 0;
     width: 70%;
   }
+
+  @media only all and (min-width: 1440px) {
+    width: 50%;
+    padding-left: 75px;
+  }
 }
 
 .nav__toggle {
@@ -73,12 +78,21 @@
     line-height: 24px;
     font-weight: 400;
     padding: 0;
-  }
 
-  &--current {
-    @media only all and (min-width: 768px) {
+    &--current {
       border-bottom: 2px solid $basic_green;
       padding-bottom: 8px;
+    }
+  }
+
+  @media only all and (min-width: 1440px) {
+    font-size: 20px;
+    line-height: 30px;
+    color: $white;
+
+    &--current {
+      border-bottom-color: $white;
+      padding-bottom: 5px;
     }
   }
 }
