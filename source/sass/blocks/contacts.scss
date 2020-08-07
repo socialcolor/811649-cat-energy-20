@@ -13,6 +13,18 @@
     padding-right: 72px;
     padding-bottom: 41px;
   }
+
+  @media only all and (min-width: 1440px) {
+    position: absolute;
+    width: 39.5%;
+    top: 94px;
+    left: 111px;
+    padding: 0;
+    padding-top: 47px;
+    padding-left: 76px;
+    padding-right: 80px;
+    padding-bottom: 41px;
+  }
 }
 
 .contacts__caption {
@@ -25,6 +37,10 @@
   @media only all and (min-width: 768px) {
     font-size: 20px;
     line-height: 23px;
+  }
+
+  @media only all and (min-width: 768px) {
+    line-height: 24px;
   }
 }
 
@@ -42,6 +58,11 @@
     line-height: 20px;
     width: 30%;
     text-align: right;
+  }
+
+  @media only all and (min-width: 1440px) {
+    width: 40%;
+    text-align: left;
   }
 }
 

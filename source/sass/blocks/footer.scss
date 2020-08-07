@@ -1,5 +1,9 @@
 .footer {
   background-color: $basic_grey;
+
+  @media only all and (min-width: 1440px) {
+    position: relative;
+  }
 }
 
 .footer__box {
@@ -16,6 +20,12 @@
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 50px;
+  }
+
+  @media only all and (min-width: 1440px) {
+    padding-top: 53px;
+    padding-left: 111px;
+    padding-right: 109px;
   }
 }
 
