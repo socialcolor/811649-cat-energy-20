@@ -9,13 +9,15 @@
 
   @media only all and (min-width: 1440px) {
     display: flex;
+    min-height: 590px;
 
     &::after {
       content: "";
       display: block;
-      position: relative;
+      position: absolute;
       z-index: -1;
       top: -108px;
+      right: 0;
       min-width: 720px;
       min-height: 696px;
       padding: 0;
