@@ -9,6 +9,10 @@
     border-top: 1px solid $basic_grey;
     background: linear-gradient(to bottom, $white 57%, $basic_grey-3 57%);
   }
+
+  @media only all and (min-width: 1440px) {
+    
+  }
 }
 
 .example__wrapper {
