@@ -67,33 +67,37 @@
     margin-right: 20px;
     flex-shrink: 0;
     z-index: 1;
-
-    @media only all and (min-width: 768px) {
-      position: absolute;
-      width: 200px;
-      height: 200px;
-      left: auto;
-      right: 42px;
-      top: 92px;
-    }
-
-    @media only all and (min-width: 1440px) {
-      display: none;
-      width: 100px;
-      height: 106px;
-      left: 0;
-      top: 0;
-    }
   }
 
   @media only all and (min-width: 768px) {
     position: static;
     margin-bottom: 26px;
+
+    &::before {
+      @media only all and (min-width: 768px) {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        left: auto;
+        right: 42px;
+        top: 92px;
+      }
+    }
   }
 
   @media only all and (min-width: 1440px) {
     margin: 0;
     margin-bottom: 49px;
+
+    &::before {
+      @media only all and (min-width: 1440px) {
+        display: block;
+        width: 100px;
+        height: 100px;
+        left: 52px;
+        top: 47px;
+      }
+    }
   }
 }
 
@@ -104,7 +108,7 @@
   margin-right: 26px;
   margin-bottom: 9px;
 
-  @media only all and (min-width: 768px) {
+  @media only all and (min-width: 1440px) {
     position: static;
   }
 }

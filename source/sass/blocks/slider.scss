@@ -13,6 +13,14 @@
     padding-left: 99px;
     padding-right: 99px;
   }
+
+  @media only all and (min-width: 1440px) {
+    position: absolute;
+    width: 40%;
+    right: 104px;
+    bottom: 5px;
+    padding: 0;
+  }
 }
 
 .slider__text {
@@ -25,6 +33,10 @@
     font-size: 20px;
     line-height: 30px;
     border-bottom: 1px dashed $slider__grey;
+  }
+
+  @media only all and (min-width: 1440px) {
+    margin-right: 7px;
   }
 }
 
