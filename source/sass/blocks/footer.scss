@@ -1,5 +1,9 @@
 .footer {
   background-color: $basic_grey;
+
+  @media only all and (min-width: 1440px) {
+    position: relative;
+  }
 }
 
 .footer__box {
@@ -7,6 +11,22 @@
   padding-right: 20px;
   padding-left: 20px;
   padding-bottom: 15px;
+
+  @media only all and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+  }
+
+  @media only all and (min-width: 1440px) {
+    padding-top: 53px;
+    padding-left: 111px;
+    padding-right: 109px;
+  }
 }
 
 .footer__link {
@@ -24,6 +44,11 @@
   flex-wrap: nowrap;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+
+  @media only all and (min-width: 768px) {
+    width: 164px;
+  }
 }
 
 .footer__text {
@@ -31,10 +56,9 @@
   font-size: 16px;
   line-height: 18px;
   color: $special_dark-grey;
-  padding-top: 14px;
 }
 
 .footer__link--margin {
-  padding-top: 4px;
+  margin: 0;
   margin-right: -6px;
 }

@@ -1,5 +1,15 @@
 .nav {
   padding-top: 12px;
+
+  @media only all and (min-width: 768px) {
+    padding-top: 0;
+    width: 70%;
+  }
+
+  @media only all and (min-width: 1440px) {
+    width: 50%;
+    padding-left: 75px;
+  }
 }
 
 .nav__toggle {
@@ -12,6 +22,10 @@
   position: absolute;
   right: 20px;
   top: 23px;
+
+  @media only all and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .nav__list {
@@ -20,17 +34,31 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+
+  @media only all and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    padding-top: 18px;
+    margin-left: 56px;
+  }
 }
 
 .nav__list--active {
-  display: flex;
+  display: block;
 }
 
 .nav__item {
   text-align: center;
   border-top: 1px solid $basic_grey_dark;
-  padding-top: 22px;
-  padding-bottom: 19px;
+
+  @media only all and (min-width: 768px) {
+    border: none;
+    margin-right: 34px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 .nav__link {
@@ -41,4 +69,30 @@
   text-decoration: none;
   text-align: center;
   color: $black;
+  display: block;
+  padding-top: 22px;
+  padding-bottom: 23px;
+
+  @media only all and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    padding: 0;
+
+    &--current {
+      border-bottom: 2px solid $basic_green;
+      padding-bottom: 8px;
+    }
+  }
+
+  @media only all and (min-width: 1440px) {
+    font-size: 20px;
+    line-height: 30px;
+    color: $white;
+
+    &--current {
+      border-bottom-color: $white;
+      padding-bottom: 5px;
+    }
+  }
 }

@@ -1,7 +1,34 @@
 .offer {
   text-align: center;
   position: relative;
-  padding-bottom: 32px;
+  padding-bottom: 22px;
+
+  @media only all and (min-width: 768px) {
+    padding-bottom: 0;
+  }
+
+  @media only all and (min-width: 1440px) {
+    display: flex;
+    min-height: 590px;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 50%;
+      position: absolute;
+      z-index: -1;
+      top: -108px;
+      right: 0;
+      min-width: 720px;
+      min-height: 696px;
+      padding: 0;
+      margin: 0;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: top center;
+    }
+  }
 }
 
 .offer__box {
@@ -9,14 +36,31 @@
   padding-top: 28px;
   padding-left: 36px;
   padding-right: 35px;
-  padding-bottom: 166px;
-  margin-bottom: 147px;
+  padding-bottom: 167px;
+  margin: 0;
+  margin-bottom: 135px;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
   color: $white;
   text-align: center;
+
+  @media only all and(min-width: 768px) {
+    background-image: none;
+    text-align: left;
+    padding: 0;
+    padding-top: 54px;
+    padding-left: 117px;
+    margin-bottom: 20px;
+    color: $black;
+  }
+
+  @media only all and(min-width: 1440px) {
+    padding: 0;
+    padding-left: 191px;
+    padding-top: 116px;
+  }
 }
 
 .offer__caption {
@@ -25,6 +69,19 @@
   line-height: 36px;
   margin: 0;
   margin-bottom: 25px;
+
+  @media only all and(min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 41px;
+    width: 70%;
+  }
+
+  @media only all and(min-width: 1440px) {
+    width: 60%;
+    margin: 0;
+    margin-bottom: 41px;
+  }
 }
 
 .offer__text {
@@ -33,10 +90,45 @@
   text-transform: uppercase;
   font-size: 14px;
   line-height: 14px;
+
+  @media only all and(min-width: 768px) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .offer__picture {
   position: absolute;
   bottom: 65px;
   left: 20px;
+
+  @media only all and(min-width: 768px) {
+    position: static;
+    width: 709px;
+    height: auto;
+  }
+
+  @media only all and(min-width: 1440px) {
+    position: absolute;
+    width: 552px;
+    top: 35px;
+    left: 558px;
+  }
+}
+
+.offer__button {
+  @media only all and(min-width: 768px) {
+    position: absolute;
+    min-width: 244px;
+    top: 284px;
+    left: 112px;
+    padding: 27px 0;
+    font-size: 20px;
+    line-height: 0px;
+  }
+
+  @media only all and(min-width: 1440px) {
+    top: 348px;
+    left: 190px;
+  }
 }

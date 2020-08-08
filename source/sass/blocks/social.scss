@@ -9,6 +9,14 @@
   padding-top: 15px;
   padding-left: 72px;
   padding-bottom: 18px;
+
+  @media only all and (min-width: 768px) {
+    margin: 0;
+    padding: 0;
+    border: none;
+    align-items: center;
+    margin-left: 18px;
+  }
 }
 
 .social__item {
@@ -18,16 +26,47 @@
   &:last-child {
     margin-right: 0;
   }
+
+  @media only all and (min-width: 768px) {
+    margin-right: 28px;
+  }
 }
 
 .social__item--vk {
   padding-top: 9px;
+
+  @media only all and (min-width: 768px) {
+    padding: 0;
+
+    & img {
+      width: 30px;
+      height: 32px;
+    }
+  }
 }
 
 .social__item--inst {
   padding-top: 9px;
+
+  @media only all and (min-width: 768px) {
+    padding: 0;
+
+    & img {
+      width: 23px;
+      height: 23px;
+    }
+  }
 }
 
 .social__item--fb {
   padding-top: 6px;
+
+  @media only all and (min-width: 768px) {
+    padding: 0;
+
+    & img {
+      width: 16px;
+      height: 30px;
+    }
+  }
 }

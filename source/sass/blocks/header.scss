@@ -1,13 +1,41 @@
 .header {
   padding-top: 11px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   position: relative;
+
+  @media only all and (min-width: 768px) {
+    padding-top: 24px;
+    padding-left: 31px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    display: flex;
+  }
+
+  @media only all and (min-width: 1440px) {
+    padding: 0;
+    padding-top: 52px;
+  }
 }
 
 .header__link {
   height: 43px;
   padding-right: 20px;
   padding-left: 20px;
+
+  @media only all and (min-width: 768px) {
+    width: 30%;
+    padding: 0;
+
+    & img {
+      width: 172px;
+    }
+  }
+
+  @media only all and (min-width: 1440px) {
+    width: 50%;
+    padding-left: 111px;
+
+    & img {
+      width: 200px;
+    }
+  }
 }

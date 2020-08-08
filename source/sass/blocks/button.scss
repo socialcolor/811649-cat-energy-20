@@ -1,7 +1,10 @@
 .button {
   @include oswald(400);
+  display: block;
   min-width: 280px;
-  padding: 9px 73px;
+  max-width: 87%;
+  margin: auto;
+  padding: 11px 0;
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
@@ -16,7 +19,7 @@
   text-align: center;
   font-size: 16px;
   line-height: 0;
-  margin-top: 0;
+  margin: 0;
   padding: 20px;
 }
 
