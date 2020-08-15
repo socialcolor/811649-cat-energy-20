@@ -159,6 +159,12 @@
   @media only all and (min-width: 768px) {
     position: absolute;
     display: block;
+    clip: rect(auto, 340px, auto, auto);
+  }
+
+  @media only all and (min-width: 1440px) {
+    position: absolute;
+    display: block;
     clip: rect(auto, 365px, auto, auto);
   }
 }
@@ -168,7 +174,16 @@
 
   @media only all and (min-width: 768px) {
     position: absolute;
-    top: -3px;
+    top: 69px;
+    left: 45px;
+    display: block;
+    clip: rect(auto, auto, auto, 340px);
+  }
+
+  @media only all and (min-width: 1440px) {
+    position: absolute;
+    top: -2px;
+    left: 0;
     display: block;
     clip: rect(auto, auto, auto, 365px);
   }
