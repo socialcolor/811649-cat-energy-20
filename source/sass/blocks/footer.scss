@@ -1,5 +1,7 @@
 .footer {
   background-color: $basic_grey;
+  max-width: 1440px;
+  margin: auto;
 
   @media only all and (min-width: 1440px) {
     position: relative;
