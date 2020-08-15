@@ -1,5 +1,26 @@
 .other-products {
   padding-top: 3px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 19px;
+    right: 0;
+    width: 17%;
+    height: 2px;
+    z-index: -1;
+    background-color: $basic_green;
+  }
+
+  @media only all and (min-width: 768px) {
+    padding: 0;
+
+    &::before {
+      width: 100%;
+      top: 21px;
+    }
+  }
 }
 
 .other-products__caption {
@@ -7,21 +28,19 @@
   font-size: 24px;
   line-height: 24px;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 4px;
   padding-left: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background-color: $white;
+  display: inline-block;
 
-  &::after {
-    content: "";
-    display: block;
-    margin-top: 10px;
-    margin-left: 21px;
-    width: 53px;
-    height: 2px;
-    background-color: $basic_green;
-    flex-grow: 1;
+  @media only all and (min-width: 768px) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 31px;
+    margin-bottom: 63px;
+    padding: 0;
+    padding-left: 36px;
+    padding-right: 36px;
   }
 }
 
@@ -33,13 +52,24 @@
   padding-bottom: 17px;
   list-style-type: none;
   border-bottom: 1px solid $special_grey-2;
+
+  @media only all and (min-width: 768px) {
+    padding: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: none;
+  }
 }
 
 .other-products__item {
   margin: 0;
-  margin-bottom: 17px;
+  margin-bottom: 18px;
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media only all and (min-width: 768px) {
+    margin: 0;
   }
 }
