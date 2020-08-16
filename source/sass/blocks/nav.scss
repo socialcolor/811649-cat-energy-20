@@ -90,8 +90,17 @@
     line-height: 30px;
     color: $white;
 
+    &--black {
+      color: $black;
+    }
+
     &--current {
       border-bottom-color: $white;
+      padding-bottom: 5px;
+    }
+
+    &--current.nav__link--black {
+      border-bottom-color: $basic_green;
       padding-bottom: 5px;
     }
   }

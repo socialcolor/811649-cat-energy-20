@@ -1,3 +1,8 @@
+.catalog {
+  max-width: 1440px;
+  margin: auto;
+}
+
 .catalog__headline {
   @include oswald(400);
   font-size: 36px;
@@ -7,4 +12,12 @@
   padding-top: 27px;
   padding-left: 20px;
   padding-bottom: 40px;
+
+  @media only all and (min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
+    padding-left: 30px;
+    margin-top: 26px;
+    margin-bottom: 53px;
+  }
 }

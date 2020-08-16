@@ -12,6 +12,10 @@
     padding-left: 71px;
     padding-right: 72px;
     padding-bottom: 41px;
+
+    &--catalog {
+      background-color: transparent;
+    }
   }
 
   @media only all and (min-width: 1440px) {

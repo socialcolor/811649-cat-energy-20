@@ -2,7 +2,7 @@
   padding-left: 21px;
   padding-right: 20px;
   padding-top: 26px;
-  padding-bottom: 24px;
+  padding-bottom: 23px;
   border-bottom: 1px solid $special_grey-2;
 
   &::before {
@@ -12,6 +12,19 @@
     height: 30px;
     margin: auto;
     background-image: url("../../img/icon-plus.svg");
+  }
+
+  @media only all and (min-width: 768px) {
+    padding: 0;
+    padding-top: 52px;
+    padding-bottom: 36px;
+    margin-top: 72px;
+    border: 1px solid $special_grey-2;
+
+    &::before {
+      width: 60px;
+      height: 60px;
+    }
   }
 }
 
@@ -25,6 +38,14 @@
   margin: 0;
   margin-top: 24px;
   margin-bottom: 5px;
+
+  @media only all and (min-width: 768px) {
+    width: 50%;
+    margin: auto;
+    margin-top: 49px;
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 .more-product__text {
@@ -36,4 +57,27 @@
   margin: 0;
   margin-top: 7px;
   margin-bottom: 22px;
+
+  @media only all and (min-width: 768px) {
+    width: 60%;
+    margin: auto;
+    margin-top: 23px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+.more-product__button {
+  font-size: 16px;
+  display: block;
+  padding: 11px 0;
+  background-color: $basic_grey;
+  text-align: center;
+  color: $special_dark_grey;
+
+  @media only all and (min-width: 768px) {
+    margin-top: 86px;
+    min-width: auto;
+    max-width: 77%;
+  }
 }
