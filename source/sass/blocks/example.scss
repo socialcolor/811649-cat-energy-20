@@ -3,7 +3,7 @@
   padding-bottom: 31px;
   padding-top: 27px;
 
-  @media only all and (min-width: 768px) {
+  @media (min-width: 768px) {
     margin: 0;
     margin-top: -53px;
     padding-top: 42px;
@@ -12,7 +12,7 @@
     background: linear-gradient(to bottom, $white 57%, $basic_grey-3 57%);
   }
 
-  @media only all and (min-width: 1440px) {
+  @media (min-width: 1440px) {
     margin-top: 0;
     border: none;
     background: linear-gradient(to bottom, #ffffff 31%, #eaeaea 31%);
@@ -27,21 +27,21 @@
   margin-bottom: 6px;
   margin-left: 20px;
 
-  @media only all and (min-width: 768px) {
+  @media (min-width: 768px) {
     font-size: 60px;
     line-height: 60px;
     margin-left: 30px;
     margin-bottom: 0;
   }
 
-  @media only all and (min-width: 1440px) {
+  @media (min-width: 1440px) {
     margin-left: 111px;
     margin-top: 33px;
   }
 }
 
 .example__wrapper-desktop {
-  @media only all and (min-width: 1440px) {
+  @media (min-width: 1440px) {
     position: relative;
     display: flex;
     padding-left: 110px;
@@ -55,14 +55,14 @@
   padding-right: 21px;
   padding-top: 27px;
 
-  @media only all and (min-width: 768px) {
+  @media (min-width: 768px) {
     padding: 0;
     padding-top: 43px;
     padding-left: 30px;
     padding-right: 30px;
   }
 
-  @media only all and (min-width: 1440px) {
+  @media (min-width: 1440px) {
     padding: 0;
     padding-top: 125px;
     width: 36%;
@@ -77,7 +77,7 @@
   font-size: 14px;
   line-height: 18px;
 
-  @media only all and (min-width: 768px) {
+  @media (min-width: 768px) {
     font-size: 16px;
     line-height: 24px;
     padding-right: 10px;
@@ -85,7 +85,7 @@
     margin-bottom: 37px;
   }
 
-  @media only all and (min-width: 1440px) {
+  @media (min-width: 1440px) {
     padding: 0;
     margin-bottom: 52px;
   }
@@ -101,7 +101,7 @@
   text-transform: uppercase;
   text-align: center;
 
-  @media only all and (min-width: 768px) {
+  @media (min-width: 768px) {
     width: 180px;
     text-align: right;
     margin: 0;
@@ -110,7 +110,7 @@
     line-height: 28px;
   }
 
-  @media only all and (min-width: 1440px) {
+  @media (min-width: 1440px) {
     width: 75%;
     display: flex;
     justify-content: space-between;
@@ -119,12 +119,12 @@
 }
 
 .example__stats {
-  @media only all and (min-width: 768px) {
+  @media (min-width: 768px) {
     display: flex;
     justify-content: space-between;
   }
 
-  @media only all and (min-width: 1440px) {
+  @media (min-width: 1440px) {
     display: block;
   }
 }
@@ -133,14 +133,14 @@
   padding-top: 4px;
   text-align: center;
 
-  @media only all and (min-width: 768px) {
+  @media (min-width: 768px) {
     position: relative;
     padding-top: 69px;
     padding-left: 44px;
     height: 575px;
   }
 
-  @media only all and (min-width: 1440px) {
+  @media (min-width: 1440px) {
     width: 66%;
     padding: 0;
     height: auto;
@@ -150,19 +150,19 @@
 }
 
 .example__picture {
-  @media only all and (min-width: 768px) {
+  @media (min-width: 768px) {
     width: 690px;
   }
 }
 
 .example__picture--before {
-  @media only all and (min-width: 768px) {
+  @media (min-width: 768px) {
     position: absolute;
     display: block;
     clip: rect(auto, 340px, auto, auto);
   }
 
-  @media only all and (min-width: 1440px) {
+  @media (min-width: 1440px) {
     position: absolute;
     display: block;
     clip: rect(auto, 365px, auto, auto);
@@ -172,7 +172,7 @@
 .example__picture--after {
   display: none;
 
-  @media only all and (min-width: 768px) {
+  @media (min-width: 768px) {
     position: absolute;
     top: 69px;
     left: 45px;
@@ -180,7 +180,7 @@
     clip: rect(auto, auto, auto, 340px);
   }
 
-  @media only all and (min-width: 1440px) {
+  @media (min-width: 1440px) {
     position: absolute;
     top: -2px;
     left: 0;
