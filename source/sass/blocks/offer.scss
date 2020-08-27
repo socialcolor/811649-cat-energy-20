@@ -3,11 +3,11 @@
   position: relative;
   padding-bottom: 22px;
 
-  @media only all and (min-width: 768px) {
+  @media (min-width: $tablet) {
     padding-bottom: 0;
   }
 
-  @media only all and (min-width: 1440px) {
+  @media (min-width: $desktop) {
     display: flex;
     min-height: 590px;
 
@@ -47,7 +47,7 @@
   color: $white;
   text-align: center;
 
-  @media only all and (min-width: 768px) {
+  @media (min-width: $tablet) {
     background-image: none;
     text-align: left;
     padding: 0;
@@ -57,7 +57,7 @@
     color: $black;
   }
 
-  @media only all and (min-width: 1440px) {
+  @media (min-width: $desktop) {
     padding: 0;
     padding-left: 191px;
     padding-top: 116px;
@@ -71,14 +71,14 @@
   margin: 0;
   margin-bottom: 25px;
 
-  @media only all and (min-width: 768px) {
+  @media (min-width: $tablet) {
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 41px;
     width: 70%;
   }
 
-  @media only all and (min-width: 1440px) {
+  @media (min-width: $desktop) {
     width: 60%;
     margin: 0;
     margin-bottom: 41px;
@@ -92,7 +92,7 @@
   font-size: 14px;
   line-height: 14px;
 
-  @media only all and (min-width: 768px) {
+  @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 20px;
   }
@@ -103,13 +103,13 @@
   bottom: 65px;
   left: 20px;
 
-  @media only all and(min-width: 768px) {
+  @media only all and(min-width: $tablet) {
     position: static;
     width: 709px;
     height: auto;
   }
 
-  @media only all and (min-width: 1440px) {
+  @media (min-width: $desktop) {
     position: absolute;
     width: 552px;
     top: 35px;
@@ -118,7 +118,7 @@
 }
 
 .offer__button {
-  @media only all and (min-width: 768px) {
+  @media (min-width: $tablet) {
     position: absolute;
     min-width: 244px;
     top: 284px;
@@ -128,7 +128,7 @@
     line-height: 0px;
   }
 
-  @media only all and (min-width: 1440px) {
+  @media (min-width: $desktop) {
     top: 348px;
     left: 190px;
   }

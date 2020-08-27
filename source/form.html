@@ -12,7 +12,11 @@
 <body class="page">
   <header class="header">
     <a href="index.html" class="header__link logo">
-      <img src="img/logo-mobile.svg" alt="Логотип магазина Cat Energy" class="logo__img" width="191" height="37">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet2.svg">
+        <img src="img/logo-mobile.svg" alt="Логотип магазина Cat Energy" class="logo__img" width="191" height="37">
+      </picture>
     </a>
     <nav class="header__nav nav">
       <button class="nav__toggle">
@@ -21,106 +25,121 @@
       </button>
       <ul class="nav__list">
         <li class="nav__item">
-          <a href="index.html" class="nav__link">Главная</a>
+          <a href="index.html" class="nav__link nav__link--black">Главная</a>
         </li>
         <li class="nav__item">
-          <a href="catalog.html" class="nav__link">Каталог продукции</a>
+          <a href="catalog.html" class="nav__link nav__link--black">Каталог продукции</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link">Подбор программы</a>
-        </li>
+          <a class="nav__link nav__link--current nav__link--black">Подбор программы</a>
       </ul>
     </nav>
   </header>
+
   <main>
     <div class="form-page">
       <h1 class="form-page__caption">Подбор программы</h1>
       <p class="form-page__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     </div>
     <form action="https://echo.htmlacademy.ru" method="POST" class="form">
-      <fieldset class="form__box form__box--border">
-        <label class="form__label">
-          <span class="form__name">Имя:*</span>
-          <input type="text" name="name" placeholder="Барсик" class="form__input-text">
-        </label>
-        <label class="form__label">
-          <span class="form__name">Вес (КГ):*</span>
-          <input type="text" name="weight" placeholder="7" class="form__input-text">
-        </label>
-        <label class="form__label">
-          <span class="form__name">Возраст (лет):</span>
-          <input type="text" name="old" placeholder="7" class="form__input-text">
-        </label>
+      <div class="form__fieldset-wrapper">
+        <fieldset class="form__box form__box--border">
+          <label class="form__label">
+            <span class="form__name">Имя:*</span>
+            <input type="text" name="name" placeholder="Барсик" class="form__input-text">
+          </label>
+          <label class="form__label">
+            <span class="form__name">Вес (КГ):*</span>
+            <input type="text" name="weight" placeholder="7" class="form__input-text">
+          </label>
+          <label class="form__label">
+            <span class="form__name">Возраст (лет):</span>
+            <input type="text" name="old" placeholder="7" class="form__input-text">
+          </label>
+        </fieldset>
+        <fieldset class="form__box form__box--radio form__box--border">
+          <input type="radio" id="slimming" name="target" class="form__input form__input--radio" checked>
+          <label for="slimming" class="form__label form__label--radio">
+            <span class="form__name form__name--radio">Похудение</span>
+          </label>
+          <input type="radio" id="gain" name="target" class="form__input form__input--radio">
+          <label for="gain" class="form__label form__label--radio">
+            <span class="form__name form__name--radio">Набор массы</span>
+          </label>
+          <input type="radio" id="other" name="target" class="form__input form__input--radio">
+          <label for="other" class="form__label form__label--radio">
+            <span class="form__name form__name--radio">Не знаю (Нужен ваш совет)</span>
+          </label>
+        </fieldset>
+      </div>
+      <fieldset class="form__box form__box--line">
+        <div class="form__caption-wrapper">
+          <p class="form__caption">Контактные данные<br> (владельца кота)</p>
+        </div>
+        <div class="form__contact-wrapper">
+          <label class="form__label ">
+            <span class="form__name form__name--margin">e-mail*</span>
+            <input type="email" name="email" placeholder="kuklachev@gmail.com" class="form__input-text">
+            <svg class="form__icon" width="18" higth="13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 13" xml:space="preserve">
+              <path d="M15.6,11.6H1.4V5.8H0V13h17V5.8h-1.4V11.6z M0,0v2.3l8.5,7.1L17,2.3V0H0z M15.6,1.6L8.5,7.5L1.4,1.6V1.4h14.2L15.6,1.6z" />
+            </svg>
+          </label>
+          <label class="form__label">
+            <span class="form__name">Телефон:*</span>
+            <input type="tel" name="phone" placeholder="8 (960) 900-60-90" class="form__input-text">
+            <svg class="form__icon form__icon--phone" width="20" higth="20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" xml:space="preserve">
+              <path d="M17.9,9.4H9.4v1.2h8.5l-2.1,2.1l0.9,0.9l3.1-3.1c0.2-0.2,0.2-0.6,0-0.9l-3.1-3.1l-0.9,0.9L17.9,9.4z" />
+              <path d="M8.1,19.4v-6.2c0-0.3-0.3-0.6-0.6-0.6H4.4l0,0H3.1l0,0c0,0.7,0.6,1.2,1.2,1.2h2.5v5H3.1c-1,0.1-1.8-0.7-1.9-1.7
+    c0-0.1,0-0.1,0-0.2V3.1c0-1,0.8-1.8,1.7-1.8c0.1,0,0.1,0,0.2,0h3.7v5H4.4c-0.7,0-1.2,0.6-1.2,1.2h4.4c0.3,0,0.6-0.3,0.6-0.6V0.6
+    C8.1,0.3,7.8,0,7.5,0H3.1C1.5-0.1,0.1,1.2,0,2.9C0,3,0,3.1,0,3.1v13.7c-0.1,1.7,1.2,3.1,2.9,3.1c0.1,0,0.2,0,0.2,0h4.4
+    C7.8,20,8.1,19.7,8.1,19.4z" />
+            </svg>
+          </label>
+        </div>
       </fieldset>
-      <fieldset class="form__box form__box--radio form__box--border">
-        <input type="radio" id="slimming" name="target" class="form__input form__input--radio" checked>
-        <label for="slimming" class="form__label form__label--radio">
-          <span class="form__name form__name--radio">Похудение</span>
-        </label>
-        <input type="radio" id="gain" name="target" class="form__input form__input--radio">
-        <label for="gain" class="form__label form__label--radio">
-          <span class="form__name form__name--radio">Набор массы</span>
-        </label>
-        <input type="radio" id="other" name="target" class="form__input form__input--radio">
-        <label for="other" class="form__label form__label--radio">
-          <span class="form__name form__name--radio">Не знаю (Нужен ваш совет)</span>
-        </label>
-      </fieldset>
-      <fieldset class="form__box">
-        <p class="form__caption">Контактные данные<br>(владельца кота)</p>
-        <label class="form__label ">
-          <span class="form__name">e-mail*</span>
-          <input type="email" name="email" placeholder="kuklachev@gmail.com" class="form__input-text">
-          <svg class="form__icon" width="18" higth="13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 13" xml:space="preserve">
-            <path d="M15.6,11.6H1.4V5.8H0V13h17V5.8h-1.4V11.6z M0,0v2.3l8.5,7.1L17,2.3V0H0z M15.6,1.6L8.5,7.5L1.4,1.6V1.4h14.2L15.6,1.6z" />
-          </svg>
-        </label>
-        <label class="form__label">
-          <span class="form__name">Телефон*</span>
-          <input type="tel" name="phone" placeholder="8 (960) 900-60-90" class="form__input-text">
-          <svg class="form__icon form__icon--phone" width="20" higth="20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" xml:space="preserve">
-            <path d="M17.9,9.4H9.4v1.2h8.5l-2.1,2.1l0.9,0.9l3.1-3.1c0.2-0.2,0.2-0.6,0-0.9l-3.1-3.1l-0.9,0.9L17.9,9.4z" />
-            <path d="M8.1,19.4v-6.2c0-0.3-0.3-0.6-0.6-0.6H4.4l0,0H3.1l0,0c0,0.7,0.6,1.2,1.2,1.2h2.5v5H3.1c-1,0.1-1.8-0.7-1.9-1.7
-  c0-0.1,0-0.1,0-0.2V3.1c0-1,0.8-1.8,1.7-1.8c0.1,0,0.1,0,0.2,0h3.7v5H4.4c-0.7,0-1.2,0.6-1.2,1.2h4.4c0.3,0,0.6-0.3,0.6-0.6V0.6
-  C8.1,0.3,7.8,0,7.5,0H3.1C1.5-0.1,0.1,1.2,0,2.9C0,3,0,3.1,0,3.1v13.7c-0.1,1.7,1.2,3.1,2.9,3.1c0.1,0,0.2,0,0.2,0h4.4
-  C7.8,20,8.1,19.7,8.1,19.4z" />
-          </svg>
-        </label>
-      </fieldset>
-      <fieldset class="form__box form__box--comment">
-        <p class="form__caption">Комментарий</p>
+      <fieldset class="form__box form__box--comment form__box--line">
+        <div class="form__wrapper">
+          <p class="form__caption">Комментарий</p>
+        </div>
         <label class="form__label">
           <textarea class="form__input-text form__input-text--comment" name="Подробнее">Расскажите обо всех повадках кота</textarea>
         </label>
       </fieldset>
-      <fieldset class="form__box form__box--option">
-        <p class="form__caption form__caption--checkbox">Дополнительно</p>
-        <input id="sugar" class="form__input form__input--checkbox" type="checkbox" name="options" checked>
-        <label for="sugar" class="form__label form__label--checkbox">
-          <span class="form__name form__name--option">Сахарозаменитель</span>
-        </label>
-        <input id="water" class="form__input form__input--checkbox" type="checkbox" name="options">
-        <label for="water" class="form__label form__label--checkbox">
-          <span class="form__name form__name--option">Питьевая вода</span>
-        </label>
-        <input id="milk" class="form__input form__input--checkbox" type="checkbox" name="options">
-        <label for="milk" class="form__label form__label--checkbox">
-          <span class="form__name form__name--option">Молоко</span>
-        </label>
-        <input id="vitamin" class="form__input form__input--checkbox" type="checkbox" name="options">
-        <label for="vitamin" class="form__label form__label--checkbox">
-          <span class="form__name form__name--option">Витамины</span>
-        </label>
+      <fieldset class="form__box form__box--option form__box--line">
+        <div class="form__caption-wrapper">
+          <p class="form__caption form__caption--option">Дополнительно</p>
+        </div>
+        <div class="form__option-wrapper">
+          <input id="sugar" class="form__input form__input--checkbox" type="checkbox" name="options" checked>
+          <label for="sugar" class="form__label form__label--checkbox">
+            <span class="form__name form__name--option">Сахарозаменитель</span>
+          </label>
+          <input id="water" class="form__input form__input--checkbox" type="checkbox" name="options">
+          <label for="water" class="form__label form__label--checkbox">
+            <span class="form__name form__name--option">Питьевая вода</span>
+          </label>
+          <input id="milk" class="form__input form__input--checkbox" type="checkbox" name="options">
+          <label for="milk" class="form__label form__label--checkbox">
+            <span class="form__name form__name--option">Молоко</span>
+          </label>
+          <input id="vitamin" class="form__input form__input--checkbox" type="checkbox" name="options">
+          <label for="vitamin" class="form__label form__label--checkbox">
+            <span class="form__name form__name--option">Витамины</span>
+          </label>
+        </div>
       </fieldset>
-      <button type="submit" class="button button--form">Отправить заявку</button>
-      <span class="form__info-text">* — Обязательные поля</span>
+      <div class="form__button-wrapper">
+        <button type="submit" class="button form__button">Отправить заявку</button>
+        <span class="form__info-text">* — Обязательные поля</span>
+      </div>
     </form>
   </main>
+
   <footer class="footer">
     <div class="contacts">
-      <div class="contacts__info">
-        <p class="contacts__caption">приглашаем <br> к сотрудничеству<br>дилеров!</p>
-        <p class="contacts__addres">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <div class="contacts__info contacts__info--catalog">
+        <p class="contacts__caption">приглашаем <br>к сотрудничеству<br>дилеров!</p>
+        <p class="contacts__addres">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></p>
       </div>
       <div class="contacts__map">
         <iframe class="contacts__google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.32085871621117!3d59.9387191690541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1595676183974!5m2!1sru!2sru" width="320" height="362" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
@@ -143,7 +162,7 @@
         </li>
         <li class="social__item social__item--fb">
           <a href="#" class="social__link">
-            <img src="img/icon-fb.svg" alt="Мы в фейсбуке" class="social__img" width="10" height="1">
+            <img src="img/icon-fb-export.svg" alt="Мы в фейсбуке" class="social__img" width="10" height="1">
           </a>
         </li>
       </ul>

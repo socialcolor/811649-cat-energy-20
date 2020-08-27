@@ -10,7 +10,7 @@
   padding-left: 72px;
   padding-bottom: 18px;
 
-  @media only all and (min-width: 768px) {
+  @media (min-width: $tablet) {
     margin: 0;
     padding: 0;
     border: none;
@@ -27,7 +27,7 @@
     margin-right: 0;
   }
 
-  @media only all and (min-width: 768px) {
+  @media (min-width: $tablet) {
     margin-right: 28px;
   }
 }
@@ -35,7 +35,7 @@
 .social__item--vk {
   padding-top: 9px;
 
-  @media only all and (min-width: 768px) {
+  @media (min-width: $tablet) {
     padding: 0;
 
     & img {
@@ -48,7 +48,7 @@
 .social__item--inst {
   padding-top: 9px;
 
-  @media only all and (min-width: 768px) {
+  @media (min-width: $tablet) {
     padding: 0;
 
     & img {
@@ -61,7 +61,7 @@
 .social__item--fb {
   padding-top: 6px;
 
-  @media only all and (min-width: 768px) {
+  @media (min-width: $tablet) {
     padding: 0;
 
     & img {

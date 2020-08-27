@@ -8,13 +8,13 @@
   display: flex;
   justify-content: space-between;
 
-  @media only all and (min-width: 768px) {
+  @media (min-width: $tablet) {
     width: 100%;
     padding-left: 99px;
     padding-right: 99px;
   }
 
-  @media only all and (min-width: 1440px) {
+  @media (min-width: $desktop) {
     position: absolute;
     width: 40%;
     right: 104px;
@@ -29,13 +29,13 @@
   line-height: 20px;
   text-transform: uppercase;
 
-  @media only all and (min-width: 768px) {
+  @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 30px;
     border-bottom: 1px dashed $slider__grey;
   }
 
-  @media only all and (min-width: 1440px) {
+  @media (min-width: $desktop) {
     margin-right: 7px;
   }
 }
@@ -53,7 +53,7 @@
   border: 1px solid $special_grey;
   border-radius: 6px;
 
-  @media only all and (min-width: 768px) {
+  @media (min-width: $tablet) {
     position: relative;
     width: 75%;
     border: none;
@@ -70,7 +70,7 @@
   background-color: $basic_green;
   border-radius: 6px;
 
-  @media only all and (min-width: 768px) {
+  @media (min-width: $tablet) {
     position: absolute;
     top: 50%;
     left: 50%;
