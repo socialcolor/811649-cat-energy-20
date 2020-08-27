@@ -1,12 +1,12 @@
 .nav {
   padding-top: 12px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     padding-top: 0;
     width: 70%;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop) {
     width: 50%;
     padding-left: 75px;
   }
@@ -23,7 +23,7 @@
   right: 20px;
   top: 23px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     display: none;
   }
 }
@@ -35,7 +35,7 @@
   padding: 0;
   margin: 0;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     display: flex;
     flex-direction: row;
     padding-top: 18px;
@@ -51,7 +51,7 @@
   text-align: center;
   border-top: 1px solid $basic_grey_dark;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     border: none;
     margin-right: 34px;
 
@@ -73,7 +73,7 @@
   padding-top: 22px;
   padding-bottom: 23px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
@@ -85,7 +85,7 @@
     }
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop) {
     font-size: 20px;
     line-height: 30px;
     color: $white;

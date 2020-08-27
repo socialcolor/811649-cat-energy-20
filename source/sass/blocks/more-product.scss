@@ -14,7 +14,7 @@
     background-image: url("../../img/icon-plus.svg");
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     padding: 0;
     padding-top: 52px;
     padding-bottom: 36px;
@@ -27,7 +27,7 @@
     }
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop) {
     margin-top: 82px;
     padding-bottom: 37px;
   }
@@ -44,7 +44,7 @@
   margin-top: 24px;
   margin-bottom: 5px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     width: 50%;
     margin: auto;
     margin-top: 49px;
@@ -52,7 +52,7 @@
     line-height: 22px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop) {
     width: 60%;
     margin-top: 47px;
   }
@@ -68,7 +68,7 @@
   margin-top: 7px;
   margin-bottom: 22px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     width: 60%;
     margin: auto;
     margin-top: 23px;
@@ -76,7 +76,7 @@
     line-height: 18px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop) {
     width: 80%;
     margin-top: 25px;
   }
@@ -90,13 +90,13 @@
   text-align: center;
   color: $special_dark_grey;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     margin-top: 86px;
     min-width: auto;
     max-width: 77%;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop) {
     width: 70%;
     margin-top: 88px;
   }

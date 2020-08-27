@@ -1,7 +1,7 @@
 .footer {
   background-color: $basic_grey;
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop) {
     position: relative;
   }
 }
@@ -12,7 +12,7 @@
   padding-left: 20px;
   padding-bottom: 15px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,7 +22,7 @@
     padding-bottom: 50px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop) {
     max-width: 1440px;
     margin: auto;
     padding-top: 53px;
@@ -48,7 +48,7 @@
   justify-content: space-between;
   align-items: center;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     width: 164px;
   }
 }
