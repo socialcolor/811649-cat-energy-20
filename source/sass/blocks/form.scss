@@ -378,7 +378,7 @@
   }
 
   &:focus + .form__label--radio::before {
-    outline: 1px solid red;
+        border: 1px solid $radio_gray;
   }
 
   @media (min-width: $tablet) {
@@ -504,7 +504,7 @@
   }
 
   &:focus + .form__label--checkbox::before {
-    outline: 1px solid red;
+    border: 1px solid $radio_gray;
   }
 }
 
