@@ -365,7 +365,6 @@
 }
 
 .form__input--radio {
-  display: none;
 
   &:checked + .form__label--radio::after {
     content: "";
@@ -377,6 +376,10 @@
     border-radius: 50%;
     top: 8px;
     left: 9px;
+  }
+
+  &:focus + .form__label--radio::before {
+    outline: 1px solid red;
   }
 
   @media (min-width: $tablet) {
@@ -493,14 +496,16 @@
 }
 
 .form__input--checkbox {
-  display: none;
-
   &:checked + .form__label--checkbox::before {
     content: "";
     background-image: url("../../img/icon-tick.svg");
     background-repeat: no-repeat;
     background-size: 20px 20px;
     background-position: center;
+  }
+
+  &:focus + .form__label--checkbox::before {
+    outline: 1px solid red;
   }
 }
 
