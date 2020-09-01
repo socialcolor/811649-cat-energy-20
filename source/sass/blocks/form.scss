@@ -378,7 +378,7 @@
   }
 
   &:focus + .form__label--radio::before {
-        border: 1px solid $radio_gray;
+    border: 1px solid $radio_gray;
   }
 
   @media (min-width: $tablet) {

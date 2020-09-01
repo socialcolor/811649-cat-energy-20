@@ -19,6 +19,13 @@
   }
 }
 
+.example__caption-wrapper {
+  @media (min-width: $desktop) {
+    max-width: 1440px;
+    margin: auto;
+  }
+}
+
 .example__caption {
   @include oswald(400);
   font-size: 36px;
@@ -38,7 +45,6 @@
     margin-left: 111px;
     margin-top: 33px;
     max-width: 1440px;
-    margin: auto;
   }
 }
 
@@ -69,7 +75,7 @@
   @media (min-width: $desktop) {
     padding: 0;
     padding-top: 125px;
-    width: 36%;
+    width: 436px;
   }
 }
 
@@ -145,7 +151,7 @@
   }
 
   @media (min-width: $desktop) {
-    width: 66%;
+    width: 690px;
     padding: 0;
     height: auto;
     bottom: 112px;
