@@ -89,11 +89,20 @@
   background-color: $basic_grey;
   text-align: center;
   color: $special_dark_grey;
+  cursor: pointer;
 
   @media (min-width: $tablet) {
     margin-top: 86px;
     min-width: auto;
     max-width: 77%;
+
+    &:hover {
+      background-color: $special_grey-2;
+    }
+
+    &:active {
+      color: transparentize($black, 0.7);
+    }
   }
 
   @media (min-width: $desktop) {
