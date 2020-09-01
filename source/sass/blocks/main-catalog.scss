@@ -24,7 +24,7 @@
   padding-top: 21px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 18px;
+  padding-bottom: 21px;
   margin-bottom: 20px;
 
   @media (min-width: $tablet) {
@@ -210,26 +210,47 @@
 
 .main-catalog__button {
   @include oswald(400);
-  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   color: $black;
   text-decoration: none;
 
+  &::after {
+    content: "";
+    width: 32px;
+    height: 10px;
+    display: block;
+    margin-left: 16px;
+    background-image: url("../../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+  }
+
   @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 30px;
+
+    &::after {
+      margin-left: 27px;
+    }
   }
 
-  & svg {
-    margin: 0;
-    margin-left: 14px;
+  &:hover {
+    &::after {
+      background-image: url("../../img/icon-right-arrow-verylong.svg");
+    }
+  }
 
-    @media (min-width: $tablet) {
-      margin: 0;
-      margin-left: 25px;
-      vertical-align: 3px;
+  &:active {
+    color: transparentize($black, 0.7);
+
+    &::after {
+      background-image: url("../../img/icon-right-arrow-verylong.svg");
+      opacity: 0.3;
     }
   }
 }

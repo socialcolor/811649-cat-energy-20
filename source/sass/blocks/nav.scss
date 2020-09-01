@@ -73,6 +73,14 @@
   padding-top: 22px;
   padding-bottom: 23px;
 
+  &[href]:hover {
+    opacity: 0.6;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet) {
     font-size: 18px;
     line-height: 24px;

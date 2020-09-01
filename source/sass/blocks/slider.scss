@@ -27,12 +27,29 @@
   @include oswald(400);
   font-size: 16px;
   line-height: 20px;
+  padding: 0;
   text-transform: uppercase;
+  border: none;
+  background-color: transparent;
 
   @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 30px;
     border-bottom: 1px dashed $slider__grey;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+      border-bottom: 1px solid transparentize($black, 0.6);
+    }
+
+    &:hover {
+      border-bottom: 1px solid transparentize($black, 0.6);
+    }
+
+    &:active {
+      border-bottom: 1px solid transparentize($black, 1);
+    }
   }
 
   @media (min-width: $desktop) {
@@ -52,6 +69,7 @@
   background-color: $white;
   border: 1px solid $special_grey;
   border-radius: 6px;
+  cursor: pointer;
 
   @media (min-width: $tablet) {
     position: relative;
@@ -60,6 +78,10 @@
     background-color: $slider__grey;
     height: 4px;
     margin-top: 11px;
+
+    &:focus {
+      outline: none;
+    }
   }
 }
 
@@ -92,6 +114,20 @@
       left: 50%;
       transform: translate(-50%, -50%);
       background-color: $basic_green;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 2px 4px opacify($shadow, 0.03);
+    }
+
+    &:hover {
+      box-shadow: 0 2px 4px opacify($shadow, 0.03);
+    }
+
+    &:active {
+      border: 1px solid $basic_green;
+      box-shadow: 0 2px 4px opacify($shadow, 0.04);
     }
   }
 }

@@ -36,6 +36,18 @@
   text-align: center;
 }
 
+.footer__img {
+  &:hover {
+    opacity: 0.8;
+    fill: $basic_green;
+  }
+
+  &:active {
+    fill: $basic_green;
+    opacity: 0.3;
+  }
+}
+
 .footer__social {
   list-style-type: none;
   padding: 0;
