@@ -22,7 +22,25 @@
 
 body {
   margin: 0;
+}
 
+.visually-hidden {
+  overflow: hidden;
+  position: absolute;
+  border: none;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main {
   @media (min-width: $desktop) {
     &::before {
       content: "";
@@ -49,20 +67,4 @@ body {
       }
     }
   }
-}
-
-.visually-hidden {
-  overflow: hidden;
-  position: absolute;
-  border: none;
-  padding: 0;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  clip: rect(0 0 0 0);
-}
-
-img {
-  max-width: 100%;
-  height: auto;
 }
