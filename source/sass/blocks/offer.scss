@@ -10,8 +10,10 @@
   @media (min-width: $desktop) {
     display: flex;
     min-height: 590px;
+    max-width: 1440px;
+    margin: auto;
 
-    &::after {
+/*     &::after {
       content: "";
       display: block;
       width: 50%;
@@ -28,12 +30,12 @@
       background-size: cover;
       background-repeat: no-repeat;
       background-position: top center;
-    }
-    @media (min-resolution: 2dppx) {
+    } */
+/*     @media (min-resolution: 2dppx) {
       &::after {
         background-image: url("../img/index-background-desktop@2x.jpg");
       }
-    }
+    } */
   }
 }
 
@@ -45,7 +47,6 @@
   padding-bottom: 167px;
   margin: 0;
   margin-bottom: 135px;
-  background-color: $basic_green;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-size: cover;
   background-repeat: no-repeat;
