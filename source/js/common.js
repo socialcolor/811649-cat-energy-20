@@ -10,3 +10,7 @@ navToggle.addEventListener('click', function () {
     navImg.setAttribute('src', 'img/icon-mobile-menu.svg');
   }
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+  nav.classList.remove('nav__list--no-js')
+});
