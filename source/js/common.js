@@ -11,6 +11,6 @@ navToggle.addEventListener('click', function () {
   }
 });
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener('DOMContentLoaded', function() {
   nav.classList.remove('nav__list--no-js')
 });
