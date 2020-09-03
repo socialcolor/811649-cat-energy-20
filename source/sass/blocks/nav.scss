@@ -28,6 +28,28 @@
   }
 }
 
+.nav__icon-open {
+  &::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 18px;
+    background-image: url("../../img/icon-mobile-menu.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.nav__icon-close {
+  &::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 18px;
+    background-image: url("../../img/icon-close.svg");
+    background-repeat: no-repeat;
+  }
+}
+
 .nav__list {
   display: none;
   flex-direction: column;

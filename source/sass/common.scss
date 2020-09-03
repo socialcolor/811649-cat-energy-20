@@ -4,6 +4,7 @@
   src: url("../fonts/oswaldmedium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -12,6 +13,7 @@
   src: url("../fonts/oswaldregular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 *,
@@ -38,33 +40,4 @@ body {
 img {
   max-width: 100%;
   height: auto;
-}
-
-.main {
-  @media (min-width: $desktop) {
-    &::before {
-      content: "";
-      display: block;
-      width: 50%;
-      position: absolute;
-      z-index: -1;
-      top: 0;
-      right: 0;
-      min-width: 720px;
-      min-height: 696px;
-      padding: 0;
-      margin: 0;
-      background-color: $green_background;
-      background-image: url("../img/index-background-desktop@1x.jpg");
-      background-size: auto 697px;
-      background-repeat: no-repeat;
-      background-position-x: right;
-    }
-
-    @media (min-resolution: 2dppx) {
-      &::after {
-        background-image: url("../img/index-background-desktop@2x.jpg");
-      }
-    }
-  }
 }
