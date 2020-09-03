@@ -6,6 +6,30 @@ const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
 
+const webp = require("gulp-webp")
+const svgstore = require("gulp-svgstore");
+const rename = require("gulp-rename");
+
+//Svg Sprite
+
+const sprite = () => {
+  return gulp.src("source/img/**/icon-*.svg")
+  .pipe(svgstore())
+  .pipe(rename("sprite.svg"))
+  .pipe(gulp.dest("source/img"))
+}
+exports.sprite = sprite;
+
+//webp
+
+const createWebp = () => {
+  return gulp.src("source/img/**/*.{png,jpg}").pipe(webp({
+    quality: 90
+  })).pipe(gulp.dest("source/img"))
+}
+exports.webp = createWebp;
+
+
 // Styles
 
 const styles = () => {
