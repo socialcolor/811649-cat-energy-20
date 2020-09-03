@@ -38,11 +38,15 @@ exports.styles = styles;
 //image size
 
 const images = () => {
- return gulp.src("source/img/**/*.{jpg,png,svg}")
- .pipe(imagemin([
- imagemin.optipng({optimizationLevel: 3}),
- imagemin.jpegtran({progressive: true}),
- ]))
+  return gulp.src("source/img/**/*.{jpg,png,svg}")
+    .pipe(imagemin([
+      imagemin.optipng({
+        optimizationLevel: 3
+      }),
+      imagemin.jpegtran({
+        progressive: true
+      }),
+    ]))
 }
 exports.images = images;
 
@@ -50,9 +54,9 @@ exports.images = images;
 
 const sprite = () => {
   return gulp.src("source/img/**/icon-*.svg")
-  .pipe(svgstore())
-  .pipe(rename("sprite.svg"))
-  .pipe(gulp.dest("source/img"))
+    .pipe(svgstore())
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("source/img"))
 }
 exports.sprite = sprite;
 
@@ -67,13 +71,19 @@ exports.webp = createWebp;
 
 // HTML
 
-const html = () => gulp.src('source/*.html', {base: 'source'}).pipe(htmlmin({ collapseWhitespace: true })).pipe(gulp.dest('build')).pipe(sync.stream());
+const html = () => gulp.src('source/*.html', {
+  base: 'source'
+}).pipe(htmlmin({
+  collapseWhitespace: true
+})).pipe(gulp.dest('build')).pipe(sync.stream());
 
 exports.html = html;
 
 //uglify
 
-const js = () => gulp.src("source/js/**/*.js").pipe(uglify()).pipe(rename({extname: ".min.js"})).pipe(gulp.dest("build/js")).pipe(sync.stream());
+const js = () => gulp.src("source/js/**/*.js").pipe(uglify()).pipe(rename({
+  extname: ".min.js"
+})).pipe(gulp.dest("build/js")).pipe(sync.stream());
 
 exports.js = js;
 
@@ -87,10 +97,12 @@ exports.clean = clean;
 
 const copy = () => {
   return gulp.src([
-    "source/fonts/**/*.{woff,woff2}",
-    "source/img/**",
-    "source/*.ico"
-  ], {base: "source"})
+      "source/fonts/**/*.{woff,woff2}",
+      "source/img/**",
+      "source/*.ico"
+    ], {
+      base: "source"
+    })
     .pipe(gulp.dest("build"));
 }
 
