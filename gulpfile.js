@@ -6,7 +6,7 @@ const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
 
-const csso = require('gulp-csso');
+const csso = require("gulp-csso");
 const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
 const svgstore = require("gulp-svgstore");
@@ -14,7 +14,7 @@ const webp = require("gulp-webp");
 const htmlmin = require("gulp-htmlmin");
 const uglify = require("gulp-uglify-es").default;
 const del = require("del");
-pipeline = require('readable-stream').pipeline;
+pipeline = require("readable-stream").pipeline;
 
 // Styles
 
@@ -27,7 +27,7 @@ const styles = () => {
       autoprefixer()
     ]))
     .pipe(csso())
-    .pipe(rename('style.min.css'))
+    .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
@@ -71,11 +71,11 @@ exports.webp = createWebp;
 
 // HTML
 
-const html = () => gulp.src('source/*.html', {
-  base: 'source'
+const html = () => gulp.src("source/*.html", {
+  base: "source"
 }).pipe(htmlmin({
   collapseWhitespace: true
-})).pipe(gulp.dest('build')).pipe(sync.stream());
+})).pipe(gulp.dest("build")).pipe(sync.stream());
 
 exports.html = html;
 
@@ -119,7 +119,7 @@ exports.build = build;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: "source"
+      baseDir: "build"
     },
     cors: true,
     notify: false,
@@ -135,9 +135,9 @@ exports.server = server;
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
   gulp.watch("source/*.html").on("change", sync.reload);
-  gulp.watch('source/js/*.js', gulp.series('js'));
+  gulp.watch("source/js/*.js", gulp.series("js"));
 }
 
 exports.default = gulp.series(
-  styles, server, watcher
+  build, server, watcher
 );

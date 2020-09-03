@@ -18,11 +18,11 @@
       background-repeat: no-repeat;
       background-position-x: right;
     }
+  }
 
-    @media (min-resolution: 2dppx) {
-      &::after {
-        background-image: url("../img/index-background-desktop@2x.jpg");
-      }
+  @media (min-resolution: 2dppx) {
+    &::before {
+      background-image: url("../img/index-background-desktop@2x.jpg");
     }
   }
 }
