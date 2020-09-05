@@ -300,6 +300,44 @@
   }
 }
 
+.form__input-text {
+  @include oswald(400);
+  color: $special_dark_grey;
+  border: 1px solid $input_gray;
+  flex-grow: 1;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-top: 13px;
+  padding-left: 13px;
+  padding-bottom: 12px;
+
+  &:hover {
+    border: 1px solid $special_grey;
+  }
+
+  &:active, &:focus {
+    outline: 2px solid $black;
+
+    & + .form__icon {
+      fill: $basic_green;
+    }
+  }
+
+  &:invalid {
+    outline: 2px solid $status_error;
+  }
+
+  @media (min-width: $tablet) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 18px;
+    padding-right: 18px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
 .form__icon {
   position: absolute;
   right: 36px;
@@ -323,40 +361,6 @@
       top: 15px;
       right: 14px;
     }
-  }
-}
-
-.form__input-text {
-  @include oswald(400);
-  color: $special_dark_grey;
-  border: 1px solid $input_gray;
-  flex-grow: 1;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  padding-top: 13px;
-  padding-left: 13px;
-  padding-bottom: 12px;
-
-  &:hover {
-    border: 1px solid $special_grey;
-  }
-
-  &:active {
-    outline: 2px solid $black;
-  }
-
-  &:invalid {
-    outline: 2px solid $status_error;
-  }
-
-  @media (min-width: $tablet) {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 18px;
-    padding-right: 18px;
-    font-size: 20px;
-    line-height: 30px;
   }
 }
 
@@ -526,10 +530,10 @@
     margin: auto;
     justify-content: flex-start;
     align-items: flex-start;
-    padding-top: 9px;
+    padding-top: 21px;
   }
 
-  @media (min-width: $tablet) {
+  @media (min-width: $desktop) {
     width: 100%;
     max-width: 1440px;
     padding-top: 24px;
@@ -555,7 +559,7 @@
     margin-top: 4px;
   }
 
-  @media (min-width: $tablet) {
+  @media (min-width: $desktop) {
     width: 568px;
   }
 }
@@ -575,7 +579,7 @@
     line-height: 16px;
   }
 
-  @media (min-width: $tablet) {
+  @media (min-width: $desktop) {
     margin-left: 82px;
     padding-top: 2px;
   }

@@ -1,6 +1,14 @@
+.contacts__wrapper {
+  @media (min-width: 1440px) {
+    max-width: 1440px;
+    position: relative;
+    margin: auto;
+  }
+}
+
 .contacts__info {
   padding-top: 13px;
-  padding-bottom: 9px;
+  padding-bottom: 11px;
   padding-left: 19px;
   padding-right: 19px;
   display: flex;
@@ -39,16 +47,16 @@
   @include oswald(400);
   width: 50%;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 18px;
   text-transform: uppercase;
 
   @media (min-width: $tablet) {
     font-size: 20px;
-    line-height: 23px;
+    line-height: 22px;
   }
 
-  @media (min-width: $tablet) {
-    line-height: 24px;
+  @media (min-width: $desktop) {
+    line-height: 21px;
   }
 }
 
