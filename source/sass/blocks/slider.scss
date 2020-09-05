@@ -18,7 +18,7 @@
     position: absolute;
     width: 40%;
     right: 104px;
-    bottom: 5px;
+    top: 438px;
     padding: 0;
   }
 }
@@ -89,8 +89,10 @@
   display: block;
   width: 50%;
   height: 100%;
+  border: none;
   background-color: $basic_green;
   border-radius: 6px;
+  cursor: pointer;
 
   @media (min-width: $tablet) {
     position: absolute;

@@ -316,7 +316,8 @@
     border: 1px solid $special_grey;
   }
 
-  &:active, &:focus {
+  &:active,
+  &:focus {
     outline: 2px solid $black;
 
     & + .form__icon {

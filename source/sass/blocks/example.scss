@@ -139,15 +139,27 @@
   }
 }
 
+.example__compare-wrapper {
+  @media (min-width: $tablet) {
+    width: 690px;
+    margin: auto;
+  }
+
+  @media (min-width: $desktop) {
+    width: auto;
+    margin: 0;
+  }
+}
+
 .example__compare {
   padding-top: 4px;
   text-align: center;
 
   @media (min-width: $tablet) {
     position: relative;
-    padding-top: 69px;
-    padding-left: 44px;
+    width: 690px;
     height: 575px;
+    padding-top: 69px;
   }
 
   @media (min-width: $desktop) {
@@ -168,12 +180,14 @@
 .example__picture--before {
   @media (min-width: $tablet) {
     position: absolute;
+    left: 7px;
     display: block;
     clip: rect(auto, 340px, auto, auto);
   }
 
   @media (min-width: $desktop) {
     position: absolute;
+    left: auto;
     display: block;
     clip: rect(auto, 365px, auto, auto);
   }
@@ -185,7 +199,7 @@
   @media (min-width: $tablet) {
     position: absolute;
     top: 69px;
-    left: 45px;
+    left: 6px;
     display: block;
     clip: rect(auto, auto, auto, 340px);
   }

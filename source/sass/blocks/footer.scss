@@ -31,6 +31,18 @@
   }
 }
 
+.footer__logo {
+  padding-bottom: 28px;
+  border-bottom: 1px solid $basic_grey-2;
+  display: block;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+    border: none;
+  }
+}
+
 .footer__link {
   display: block;
   text-align: center;
@@ -59,9 +71,13 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  border-top: 1px solid $basic_grey-2;
+  padding-top: 18px;
 
   @media (min-width: $tablet) {
     width: 164px;
+    border: none;
+    padding: 0;
   }
 }
 

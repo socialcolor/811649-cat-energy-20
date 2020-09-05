@@ -108,7 +108,7 @@
   @media (min-width: $tablet) {
     position: absolute;
     min-width: 244px;
-    top: 284px;
+    bottom: 530px;
     left: 112px;
     padding: 27px 0;
     font-size: 20px;
@@ -116,7 +116,7 @@
   }
 
   @media (min-width: $desktop) {
-    top: 348px;
+    bottom: 188px;
     left: 190px;
   }
 }
